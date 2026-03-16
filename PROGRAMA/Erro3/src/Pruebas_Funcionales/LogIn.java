@@ -194,6 +194,7 @@ public class LogIn extends JFrame {
 			txtPassword.setText("");
 
 			if (!passIngresada.equals("AWSD")) { //OLD PASS: 17 de mayo de 2009
+				//LoggerUtil.guardarLog("O5 USER", "###");
 				JOptionPane.showMessageDialog(this, "Administratzailearen pasahitza okerra da.");
 				return;
 			}
@@ -220,6 +221,7 @@ public class LogIn extends JFrame {
 			txtPassword.setText("");
 
 			if (!passIngresada.equals("AWSD")) { //OLD PASS: 787b
+				//LoggerUtil.guardarLog("Epaile bat", "ARBITROA");
 				JOptionPane.showMessageDialog(this, "Epailearen pasahitz okerra.");
 				return;
 			}
@@ -244,12 +246,12 @@ public class LogIn extends JFrame {
 			for (String linea : lineas) {
 
 				String[] datos = linea.split(";");
-				if (datos.length < 8)
-					continue;
+				if (datos.length < 8) continue;
 
+				// Comprobamos si coincide usuario (posición 5) y contraseña (posición 6)
 				if (usuarioIngresado.equals(datos[5]) && passIngresada.equals(datos[6])) {
 
-					// 📝 GUARDAR LOG DE INICIO DE SESIÓN
+					// 📝 SE REGISTRA EL ÉXITO DEL USUARIO NORMAL
 					LoggerUtil.guardarLog(datos[5], datos[1]);
 
 					VentanaUsuarios ventana = new VentanaUsuarios();
@@ -258,17 +260,17 @@ public class LogIn extends JFrame {
 					this.dispose(); // Cerramos el login
 					return;
 				}
-
 			}
-		
 
+			// 🔥 AQUÍ SE REGISTRA EL FALLO DE USUARIO NORMAL / DESCONOCIDO 🔥
+			// Si llega aquí, significa que no es Admin, no es Árbitro, y no acertó en datos.dat
+			LoggerUtil.registrarFallo(usuarioIngresado, passIngresada, "Erabiltzaile edo pasahitz okerra");
 			JOptionPane.showMessageDialog(this, "Erabiltzaile-izen edo pasahitz okerra.");
 
 		} catch (IOException e) {
 			JOptionPane.showMessageDialog(this, "Ezin izan da datos.dat fitxategia irakurri");
 		}
 	}
-	
 
 	public static void main(String[] args) {
 		new LogIn().setVisible(true);
