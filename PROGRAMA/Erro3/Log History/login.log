@@ -83,11 +83,51 @@ Usuario: TESTSystem | Nombre: Testeo | Fecha: 2026-03-13 14:56:18
 Usuario: TESTSystem | Nombre: Testeo | Fecha: 2026-03-13 15:14:46
 Usuario: TESTSystem | Nombre: Testeo | Fecha: 2026-03-15 13:08:09
 Usuario: TESTSystem | Nombre: Testeo | Fecha: 2026-03-16 12:46:47
-------------------------------------------------------------------
-			NEW LOG VERSION
-------------------------------------------------------------------
-[2026-03-16 14:22:23] ✅ ONARTUA: TESTSystem      | IZENA: Testeo 
-------------------------------------------------------------------
+-------------------------------------------------------------------
+			NEW LOG VERSION V1
+-------------------------------------------------------------------
+[2026-03-16 14:22:23] ✅ ONARTUA: TESTSystem     | IZENA: [######] 
+-------------------------------------------------------------------
 [2026-03-16 14:22:36] ❌ ERROREA: Erabiltzaile edo pasahitz okerra 
 ERABILTZAILEA: TESTError       | PASAHITZA: ERRORerror 
-------------------------------------------------------------------
+-------------------------------------------------------------------
+[2026-03-17 08:26:13] ✅ ONARTUA: TESTSystem     | IZENA: [######] 
+-------------------------------------------------------------------
+[2026-03-17 08:26:36] ❌ ERROREA: Erabiltzaile edo pasahitz okerra 
+ERABILTZAILEA: TestSystem      | PASAHITZA: TestError 
+-------------------------------------------------------------------
+			NEW LOG VERSION V2
+-------------------------------------------------------------------
+[2026-03-17 08:50:53] ✅ ONARTUA: [##########]   | IZENA: [######] 
+-------------------------------------------------------------------
+[2026-03-17 08:51:42] ✅ ONARTUA: [##########]   | IZENA: [######] 
+-------------------------------------------------------------------
+[2026-03-17 08:52:02] ❌ ERROREA: Erabiltzaile edo pasahitz okerra 
+ERABILTZAILEA: [##########]   | PASAHITZA: [PARAMETRO INDISPONIBLE] 
+-------------------------------------------------------------------
+[2026-03-17 08:56:13] ✅ ONARTUA: [##########]   | IZENA: [######] 
+-------------------------------------------------------------------
+[2026-03-17 08:56:34] ❌ ERROREA: Erabiltzaile edo pasahitz okerra 
+ERABILTZAILEA: [##########]   | PASAHITZA: [PARAMETRO INDISPONIBLE] 
+-------------------------------------------------------------------
+[2026-03-17 08:57:22] ✅ ONARTUA: F.Alo          | IZENA: Fernando 
+-------------------------------------------------------------------
+[2026-03-17 08:57:42] ✅ ONARTUA: Mazda787b      | IZENA: Mazda 
+-------------------------------------------------------------------
+[2026-03-17 08:58:20] ❌ ERROREA: Erabiltzaile edo pasahitz okerra 
+ERABILTZAILEA: [NORMAL USER]  | PASAHITZA: [PARAMETRO INDISPONIBLE] 
+-------------------------------------------------------------------
+[2026-03-17 08:58:51] ❌ ERROREA: Erabiltzaile edo pasahitz okerra 
+ERABILTZAILEA: [NORMAL USER]  | PASAHITZA: [PARAMETRO INDISPONIBLE] 
+-------------------------------------------------------------------
+[2026-03-17 09:08:35] ✅ ONARTUA: [##########]   | IZENA: [######] 
+-------------------------------------------------------------------
+[2026-03-17 09:08:48] ❌ ERROREA: Erabiltzaile edo pasahitz okerra 
+ERABILTZAILEA: [##########]   | PASAHITZA: [PARAMETRO INDISPONIBLE] 
+-------------------------------------------------------------------
+[2026-03-17 09:09:06] ❌ ERROREA: Erabiltzaile edo pasahitz okerra 
+ERABILTZAILEA: [NORMAL USER]  | PASAHITZA: [PARAMETRO INDISPONIBLE] 
+-------------------------------------------------------------------
+[2026-03-17 09:09:24] ❌ ERROREA: Erabiltzaile edo pasahitz okerra 
+ERABILTZAILEA: [NORMAL USER]  | PASAHITZA: [PARAMETRO INDISPONIBLE] 
+-------------------------------------------------------------------
