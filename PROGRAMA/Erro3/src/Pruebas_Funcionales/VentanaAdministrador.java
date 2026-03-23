@@ -9,7 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Iterator;
 import java.util.List;
-import org.w3c.dom.*;
+//import org.w3c.dom.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.transform.OutputKeys;
@@ -19,7 +19,7 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
+//import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import Metodoak.Cerrar_Sesion;
