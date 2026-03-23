@@ -53,7 +53,7 @@ public class VentanaAdministrador extends JFrame {
         // Pestañas Base de Datos (MySQL)
         pestañas.addTab("Jokalari Sortu", crearPanelCrearJugador());
         pestañas.addTab("Jokalari Ezabatu", crearPanelEliminarJugador());
-        pestañas.addTab("Jokalariak Aldatu", crearPanelTraspaso());
+        pestañas.addTab("Jokalariak Aldatu", Traspaso_Y_Confirmacion.crearPanelTraspaso());
 
         //Pestaña de generar XML
         pestañas.addTab("XML Kudeaketa", crearPanelXML());
@@ -308,34 +308,7 @@ public class VentanaAdministrador extends JFrame {
     // ==========================================
     // 6. TRASPASO DE JUGADORES (MySQL - BASE DE DATOS)
     // ==========================================
-    private JPanel crearPanelTraspaso() {
-        JPanel panel = new JPanel();
-        panel.add(new JLabel("Jokalariaren ID:"));
-        JTextField txtIdJugador = new JTextField(5);
-        panel.add(txtIdJugador);
-
-        panel.add(new JLabel("Talde Berria:"));
-        JComboBox<String> cbEquipoDestino = new JComboBox<>(ZERRENDA_TALDEAK);
-        panel.add(cbEquipoDestino);
-
-        JButton btnTraspasar = new JButton("Aldatu BD-an");
-        panel.add(btnTraspasar);
-
-        btnTraspasar.addActionListener(e -> {
-            try {
-                int id = Integer.parseInt(txtIdJugador.getText());
-                String equipoDestino = (String) cbEquipoDestino.getSelectedItem();
-                
-                boolean exito = Traspaso_Y_Confirmacion.realizarTraspaso(this, id, equipoDestino);
-                if (exito) txtIdJugador.setText("");
-                
-            } catch (NumberFormatException ex) {
-                JOptionPane.showMessageDialog(this, "ID-a zenbaki bat izan behar da.");
-            }
-        });
-
-        return panel;
-    }
+  
     
     // ==========================================
     // 7. GENERAR XML (MySQL - BASE DE DATOS) Todavia no esta hecho.

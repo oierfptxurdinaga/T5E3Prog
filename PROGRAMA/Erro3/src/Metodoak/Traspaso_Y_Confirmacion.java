@@ -1,7 +1,8 @@
 package Metodoak;
 
 import javax.swing.*;
-import java.awt.Component;
+import java.awt.*;
+import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -9,53 +10,167 @@ import java.sql.SQLException;
 
 public class Traspaso_Y_Confirmacion {
 
-    public static boolean realizarTraspaso(Component parent, int jugadorId, String equipoDestino) {
-        
-        String nuevoDorsalStr = JOptionPane.showInputDialog(parent, "Sartu jokalariaren dortsal berria:");
-        if (nuevoDorsalStr == null || nuevoDorsalStr.trim().isEmpty()) return false;
-        
-        int nuevoDorsal;
-        try {
-            nuevoDorsal = Integer.parseInt(nuevoDorsalStr);
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(parent, "Dortsala zenbaki bat izan behar da.");
-            return false;
+    // Lista de equipos de tu base de datos
+    private static final String[] ZERRENDA_TALDEAK = {
+            "Aloña Mendi", "Amezti Zarautz", "Berango Urduliz", "Irauli Bosteko", "Kukullaga", "San Adrian"
+    };
+
+    // Clase de apoyo para guardar el jugador en el ComboBox de forma visual
+    private static class JugadorComboItem {
+        String nana;
+        String nombre;
+        int dorsal;
+
+        public JugadorComboItem(String nana, String nombre, int dorsal) {
+            this.nana = nana;
+            this.nombre = nombre;
+            this.dorsal = dorsal;
         }
 
-        try (Connection conn = Konexioa.getKonexioa()) {
-            if (conn == null) return false;
-
-            // 1. Konprobatu dortsala okupatuta dagoen
-            String checkSql = "SELECT count(*) FROM jokalariak WHERE taldea = ? AND dortsala = ?";
-            PreparedStatement checkStmt = conn.prepareStatement(checkSql);
-            checkStmt.setString(1, equipoDestino);
-            checkStmt.setInt(2, nuevoDorsal);
-            ResultSet rs = checkStmt.executeQuery();
-            
-            if (rs.next() && rs.getInt(1) > 0) {
-                JOptionPane.showMessageDialog(parent, "Dorsal hori okupatuta dago talde horretan.");
-                return false;
-            }
-
-            // 2. Eguneratu jokalaria
-            String updateSql = "UPDATE jokalariak SET taldea = ?, dortsala = ? WHERE id = ?";
-            PreparedStatement updateStmt = conn.prepareStatement(updateSql);
-            updateStmt.setString(1, equipoDestino);
-            updateStmt.setInt(2, nuevoDorsal);
-            updateStmt.setInt(3, jugadorId); 
-            
-            int filas = updateStmt.executeUpdate();
-            if (filas > 0) {
-                JOptionPane.showMessageDialog(parent, "Transferentzia behar bezala burutu da.");
-                return true;
-            } else {
-                JOptionPane.showMessageDialog(parent, "Ez da jokalaria aurkitu.");
-                return false;
-            }
-
-        } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(parent, "Errorea transferentzian: " + ex.getMessage());
-            return false;
+        @Override
+        public String toString() {
+            return nombre + " (Dortsala: " + dorsal + ")";
         }
+    }
+
+    // Método que genera todo el panel visual para los traspasos
+    public static JPanel crearPanelTraspaso() {
+        JPanel panel = new JPanel(new GridLayout(6, 2, 10, 10));
+        panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
+
+        JComboBox<String> cbEquipoOrigen = new JComboBox<>(ZERRENDA_TALDEAK);
+        JComboBox<JugadorComboItem> cbJugadores = new JComboBox<>();
+        JComboBox<String> cbEquipoDestino = new JComboBox<>(ZERRENDA_TALDEAK);
+        JTextField txtDorsal = new JTextField();
+
+        panel.add(new JLabel("Jatorrizko Taldea (Equipo de origen):"));
+        panel.add(cbEquipoOrigen);
+
+        panel.add(new JLabel("Aukeratu Jokalaria (Selecciona el Jugador):"));
+        panel.add(cbJugadores);
+
+        panel.add(new JLabel("Helburu Taldea (Equipo de destino):"));
+        panel.add(cbEquipoDestino);
+
+        panel.add(new JLabel("Dortsal Berria (Nuevo Dorsal):"));
+        panel.add(txtDorsal);
+
+        JButton btnTraspasar = new JButton("Traspasatu");
+        panel.add(new JLabel("")); // Espaciador visual
+        panel.add(btnTraspasar);
+
+        // Listener: Cada vez que cambias de equipo origen, se cargan sus jugadores
+        ActionListener cargarJugadoresAction = e -> {
+            String equipoOrigen = (String) cbEquipoOrigen.getSelectedItem();
+            cbJugadores.removeAllItems();
+            txtDorsal.setText("");
+
+            if (equipoOrigen == null) return;
+
+            try (Connection conn = Konexioa.getKonexioa()) {
+                if (conn == null) return;
+                String sql = "SELECT NANa, Izen_abizena, Dortsala FROM jokalaria WHERE taldea = ?";
+                PreparedStatement ps = conn.prepareStatement(sql);
+                ps.setString(1, equipoOrigen);
+                ResultSet rs = ps.executeQuery();
+
+                while (rs.next()) {
+                    cbJugadores.addItem(new JugadorComboItem(
+                            rs.getString("NANa"),
+                            rs.getString("Izen_abizena"),
+                            rs.getInt("Dortsala")
+                    ));
+                }
+            } catch (SQLException ex) {
+                JOptionPane.showMessageDialog(panel, "Errorea jokalariak kargatzean: " + ex.getMessage());
+            }
+        };
+
+        cbEquipoOrigen.addActionListener(cargarJugadoresAction);
+
+        // Listener: Al seleccionar un jugador, se rellena su dorsal actual en el recuadro de texto
+        cbJugadores.addActionListener(e -> {
+            JugadorComboItem seleccionado = (JugadorComboItem) cbJugadores.getSelectedItem();
+            if (seleccionado != null) {
+                txtDorsal.setText(String.valueOf(seleccionado.dorsal));
+            }
+        });
+
+        // Carga inicial al iniciar la pantalla
+        cargarJugadoresAction.actionPerformed(null);
+
+        // Acción de Traspasar
+        btnTraspasar.addActionListener(e -> {
+            JugadorComboItem jokalaria = (JugadorComboItem) cbJugadores.getSelectedItem();
+            String equipoDestino = (String) cbEquipoDestino.getSelectedItem();
+            String equipoOrigen = (String) cbEquipoOrigen.getSelectedItem();
+            String nuevoDorsalStr = txtDorsal.getText();
+
+            if (jokalaria == null) {
+                JOptionPane.showMessageDialog(panel, "Aukeratu jokalari bat mesedez.");
+                return;
+            }
+
+            if (equipoOrigen.equals(equipoDestino)) {
+                JOptionPane.showMessageDialog(panel, "Jatorrizko eta helburu taldeak ezin dira berdinak izan.");
+                return;
+            }
+
+            int nuevoDorsal;
+            try {
+                nuevoDorsal = Integer.parseInt(nuevoDorsalStr);
+            } catch (NumberFormatException ex) {
+                JOptionPane.showMessageDialog(panel, "Dortsala zenbaki bat izan behar da.");
+                return;
+            }
+
+            try (Connection conn = Konexioa.getKonexioa()) {
+                if (conn == null) return;
+
+                // 1. Comprobar si el nuevo dorsal ya está ocupado en el equipo destino
+                String checkSql = "SELECT count(*) FROM jokalaria WHERE taldea = ? AND Dortsala = ?";
+                PreparedStatement checkStmt = conn.prepareStatement(checkSql);
+                checkStmt.setString(1, equipoDestino);
+                checkStmt.setInt(2, nuevoDorsal);
+                ResultSet rs = checkStmt.executeQuery();
+
+                if (rs.next() && rs.getInt(1) > 0) {
+                    JOptionPane.showMessageDialog(panel, "Dortsal hori (" + nuevoDorsal + ") okupatuta dago " + equipoDestino + " taldean. Mesedez, aldatu dortsala.");
+                    return;
+                }
+
+                // 2. Actualizar el jugador en la tabla jokalaria
+                String updateSql = "UPDATE jokalaria SET taldea = ?, Dortsala = ? WHERE NANa = ?";
+                PreparedStatement updateStmt = conn.prepareStatement(updateSql);
+                updateStmt.setString(1, equipoDestino);
+                updateStmt.setInt(2, nuevoDorsal);
+                updateStmt.setString(3, jokalaria.nana);
+
+                int filas = updateStmt.executeUpdate();
+                if (filas > 0) {
+                    // 3. Opcional: Actualizar también en la tabla 'pertsona' por precaución de datos huérfanos
+                    try {
+                         String updatePertsona = "UPDATE pertsona SET taldea = ? WHERE NANa = ?";
+                         PreparedStatement pstmtP = conn.prepareStatement(updatePertsona);
+                         pstmtP.setString(1, equipoDestino);
+                         pstmtP.setString(2, jokalaria.nana);
+                         pstmtP.executeUpdate();
+                    } catch (SQLException ignore) { 
+                        // Ignoramos si la tabla pertsona no tuviera la columna de manera estricta
+                    }
+
+                    JOptionPane.showMessageDialog(panel, "Traspasoa behar bezala burutu da!");
+                    // Recargar la lista de jugadores automáticamente para refrescar
+                    cargarJugadoresAction.actionPerformed(null);
+                } else {
+                    JOptionPane.showMessageDialog(panel, "Ez da jokalaria aurkitu datu-basean.");
+                }
+
+            } catch (SQLException ex) {
+                JOptionPane.showMessageDialog(panel, "Errorea traspasoan: " + ex.getMessage());
+            }
+        });
+
+        return panel;
     }
 }

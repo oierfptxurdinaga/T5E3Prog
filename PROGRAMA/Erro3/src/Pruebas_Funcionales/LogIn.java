@@ -1,127 +1,8 @@
-/*package Pruebas_Funcionales;
-
-import javax.swing.*;
-import java.io.*;
-import java.nio.file.*;
-import java.util.List;
-import Metodoak.LoggerUtil;
-
-public class LogIn extends JFrame {
-
-    private JTextField txtUsuario;
-    private JPasswordField txtPassword;
-
-    public LogIn() {
-        setTitle("Login de Usuario");
-        setSize(350, 220);
-        setLocationRelativeTo(null);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
-
-        JLabel lblUsuario = new JLabel("Usuario:");
-        lblUsuario.setBounds(20, 30, 100, 20);
-        getContentPane().add(lblUsuario);
-
-        txtUsuario = new JTextField();
-        txtUsuario.setBounds(120, 30, 180, 20);
-        getContentPane().add(txtUsuario);
-
-        JLabel lblPassword = new JLabel("Contraseña:");
-        lblPassword.setBounds(20, 70, 100, 20);
-        getContentPane().add(lblPassword);
-
-        txtPassword = new JPasswordField();
-        txtPassword.setBounds(120, 70, 180, 20);
-        getContentPane().add(txtPassword);
-
-        JButton btnLogin = new JButton("Iniciar Sesión");
-        btnLogin.setBounds(100, 120, 130, 30);
-        getContentPane().add(btnLogin);
-
-        btnLogin.addActionListener(e -> validarLogin());
-    }
-
-    private void validarLogin() {
-        String usuarioIngresado = txtUsuario.getText().trim();
-        String passIngresada = new String(txtPassword.getPassword()).trim();
-
-        if (usuarioIngresado.isEmpty() || passIngresada.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Ezin dira eremu hutsak utzi.");
-            return;
-        }
-
-        try {
-            if (!Files.exists(Paths.get("datos.dat"))) {
-                JOptionPane.showMessageDialog(this, "Ez da datos.dat fitxategia aurkitu.");
-                return;
-            }
-
-            List<String> lineas = Files.readAllLines(Paths.get("datos.dat"));
-            boolean autenticado = false;
-
-            for (String linea : lineas) {
-                String[] datos = linea.split(";");
-                if (datos.length < 8) continue;
-
-                if (usuarioIngresado.equals(datos[5]) && passIngresada.equals(datos[6])) {
-                    autenticado = true;
-                    String rol = datos[7]; 
-                    
-                    LoggerUtil.guardarLog(datos[5], datos[1]);
-
-                    if (rol.equalsIgnoreCase("ERABILTZAILEA")) {
-                        new VentanaUsuarios().setVisible(true);
-                    } else if (rol.equalsIgnoreCase("ADMIN")) {
-                        new VentanaAdministrador().setVisible(true);
-                    } else if (rol.equalsIgnoreCase("ARBITROA")) {
-                        new VentanaArbitro().setVisible(true);
-                    }
-                    this.dispose();
-                    return;
-                }
-            }
-
-            if (!autenticado) {
-                JOptionPane.showMessageDialog(this, "Erabiltzaile-izen edo pasahitz okerra.");
-            }
-
-        } catch (IOException e) {
-            JOptionPane.showMessageDialog(this, "Ezin izan da datos.dat fitxategia irakurri");
-        }
-    }
-
-    public static void main(String[] args) {
-        new LogIn().setVisible(true);
-    }
-}*/
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-/*import java.awt.Image;
-import javax.swing.ImageIcon;
-
-ImageIcon icon = new ImageIcon("Imagenes16K/NexoDev.png");
-Image img = icon.getImage().getScaledInstance(32, 32, Image.SCALE_SMOOTH);
-setIconImage(img);*/
-
-/*.getScaledInstance(48, 48, Image.SCALE_SMOOTH);*/
-
-
-
-
-
-
-
 package Pruebas_Funcionales;
 
 import javax.swing.*;
+
+import java.awt.Image;
 import java.io.*;
 import java.nio.file.*;
 import java.util.*;
@@ -167,6 +48,26 @@ public class LogIn extends JFrame {
 		getContentPane().add(btnLogin);
 
 		btnLogin.addActionListener(e -> verificarDatos());
+		
+		ImageIcon iconoOriginal = new ImageIcon("Imagenes16K/EEF16K.png");
+		Image imagenEscalada = iconoOriginal.getImage().getScaledInstance(80, 80, Image.SCALE_SMOOTH);
+		ImageIcon icono = new ImageIcon(imagenEscalada);
+
+		JLabel lblImagen = new JLabel(icono);
+		lblImagen.setBounds(10, 100, 80, 80);
+		getContentPane().add(lblImagen);
+
+		getContentPane().add(lblImagen);
+
+		ImageIcon iconoOriginal2 = new ImageIcon("Imagenes16K/NexoDev4K.png");
+		Image imagenEscalada2 = iconoOriginal2.getImage().getScaledInstance(96, 64, Image.SCALE_SMOOTH);
+		ImageIcon icono2 = new ImageIcon(imagenEscalada2);
+
+		JLabel lblImagen2 = new JLabel(icono2);
+		lblImagen2.setBounds(225, 100, 96, 64);
+		getContentPane().add(lblImagen2);
+
+		getContentPane().add(lblImagen2);
 
 	}
 
