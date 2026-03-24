@@ -3,6 +3,7 @@ package Metodoak;
 import javax.swing.*;
 
 import Pruebas_Funcionales.LogIn;
+import Pruebas_Funcionales.VentanaArbitro;
 
 import java.awt.*;
 
@@ -129,6 +130,10 @@ public class Cerrar_Sesion {
 			);
 
 			if (opcion == JOptionPane.YES_OPTION) {
+				
+				if (ventanaPadre instanceof VentanaArbitro) {
+					LoggerUtil_Arb.guardarLogArbitro("SESIOA ITXI", "Epaileak saioa amaitu du");
+				}
 				new LogIn().setVisible(true);
 				ventanaPadre.dispose();
 			}

@@ -27,6 +27,7 @@ public class VentanaUsuarios extends JFrame {
 
     public VentanaUsuarios() {
         setTitle("Ventana de Usuario");
+        setIconImage(new ImageIcon("Imagenes16K/LOGON.png").getImage());
         setSize(800, 500);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

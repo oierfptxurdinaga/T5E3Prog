@@ -1,15 +1,21 @@
 package Pruebas_Funcionales;
 
 import javax.swing.*;
+import javax.swing.Timer;
 
 import java.awt.Image;
 import java.io.*;
 import java.nio.file.*;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 //import java.awt.Toolkit;
 
 import Metodoak.LoggerUtil;
 import Metodoak.VerificacionDeDatos;
+import Metodoak.LoggerUtil_Arb;
+import java.awt.Font;
 //import Prueba_De_Pojos.Pertsona;
 
 public class LogIn extends JFrame {
@@ -50,25 +56,59 @@ public class LogIn extends JFrame {
 		btnLogin.addActionListener(e -> verificarDatos());
 		
 		ImageIcon iconoOriginal = new ImageIcon("Imagenes16K/EEF16K.png");
-		Image imagenEscalada = iconoOriginal.getImage().getScaledInstance(80, 80, Image.SCALE_SMOOTH);
+		Image imagenEscalada = iconoOriginal.getImage().getScaledInstance(80, 80, Image.SCALE_SMOOTH); //SCALE_SMOOTH para mejor calidad | SCALE_FAST para rendimiento
 		ImageIcon icono = new ImageIcon(imagenEscalada);
 
 		JLabel lblImagen = new JLabel(icono);
+		lblImagen.setFont(new Font("Consolas", Font.PLAIN, 10));
 		lblImagen.setBounds(10, 100, 80, 80);
 		getContentPane().add(lblImagen);
 
 		getContentPane().add(lblImagen);
 
 		ImageIcon iconoOriginal2 = new ImageIcon("Imagenes16K/NexoDev4K.png");
-		Image imagenEscalada2 = iconoOriginal2.getImage().getScaledInstance(96, 64, Image.SCALE_SMOOTH);
+		Image imagenEscalada2 = iconoOriginal2.getImage().getScaledInstance(96, 64, Image.SCALE_SMOOTH); //SCALE_SMOOTH para mejor calidad | SCALE_FAST para rendimiento
 		ImageIcon icono2 = new ImageIcon(imagenEscalada2);
 
 		JLabel lblImagen2 = new JLabel(icono2);
+		lblImagen2.setFont(new Font("Consolas", Font.PLAIN, 10));
 		lblImagen2.setBounds(225, 100, 96, 64);
 		getContentPane().add(lblImagen2);
 
 		getContentPane().add(lblImagen2);
+		
+		JLabel lblRealDate = new JLabel("Fecha Y Hora");
+		lblRealDate.setBounds(225, 168, 111, 12);
+		getContentPane().add(lblRealDate);
 
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+		
+		/* Dato curioso sobre los formatos de fecha y hora de Timer:
+		 * yyyy: año completo (2026)
+		 * YYYY: año de la semana (2025, porque la semana 1 de 2026 empieza en diciembre de 2025)
+		 * mm: minutos (00-59)
+		 * MM: meses (01-12)
+		 * dd: día del mes (01-31)
+		 * DD: día del año (001-365)
+		 * hh: hora en formato 12 horas (01-12)
+		 * HH: hora en formato 24 horas (00-23)
+		 * ss: segundos (00-59)
+		 * SS: milisegundos (000-999)
+		 * SSS: microsegundos (000000-999999)
+		 * SSSS: nanosegundos (000000000-999999999)
+		 * 
+		 * CONCLUSIÓN: Para mostrar la fecha y hora correctamente, se debe usar "yyyy/MM/dd HH:mm:ss" en lugar de "YYYY/MM/DD hh:mm:ss".
+		 */
+		
+		Timer timer = new Timer(1000, new ActionListener() {
+		    @Override
+		    public void actionPerformed(ActionEvent e) {
+			lblRealDate.setText(dtf.format(java.time.LocalDateTime.now()));
+		    }
+		});
+		
+		timer.start();
+		setVisible(true);
 	}
 
 	// Con esto verifica si los datos ingresados coinciden con los que deberia de
@@ -130,6 +170,9 @@ public class LogIn extends JFrame {
 			String codigo = JOptionPane.showInputDialog(this, "Sarbide mugatua\\nSartu egiaztapen-kodea:");
 
 			if (codigo != null && codigo.equals("AWSD")) { //OLD CODE: LeMans 1991
+				
+				LoggerUtil_Arb.guardarLogArbitro("SESIOA HASI", "Epailea sisteman dago");
+				
 				new VentanaArbitro().setVisible(true);
 				this.dispose();
 			} else {

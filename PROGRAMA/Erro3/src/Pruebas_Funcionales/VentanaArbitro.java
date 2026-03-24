@@ -12,7 +12,9 @@ import java.util.Vector;
 
 import Metodoak.Cerrar_Sesion;
 import Metodoak.Panel_Pestaña_Tarjetas_Equipos;
+import Metodoak.Pestaña_Resultados;
 import Metodoak.Konexioa;
+import Metodoak.LoggerUtil_Arb;
 
 public class VentanaArbitro extends JFrame {
 
@@ -21,7 +23,8 @@ public class VentanaArbitro extends JFrame {
 
     public VentanaArbitro() {
         setTitle("Panel del Arbitro");
-        setSize(850, 600); // Tamaño un poco mayor para acoger más campos
+        setIconImage(new ImageIcon("Imagenes16K/LOGONarb.png").getImage());
+        setSize(850, 600); 
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -37,6 +40,7 @@ public class VentanaArbitro extends JFrame {
         JTabbedPane pestañas = new JTabbedPane();
         pestañas.addTab("Orri Nagusia", crearPanelPrincipal());
         pestañas.addTab("Taldeak Ikusi", Panel_Pestaña_Tarjetas_Equipos.crearPanelEquipos());
+        pestañas.addTab("Emaitzak", new Pestaña_Resultados());
         
         JPanel panelCerrarSesion = Cerrar_Sesion.crearPanel(this);
         pestañas.addTab("Saioa Itxi", panelCerrarSesion);
@@ -250,6 +254,11 @@ public class VentanaArbitro extends JFrame {
                     cstmt.execute();
 
                     JOptionPane.showMessageDialog(panel, "Behar bezala gorde da emaitza eta sailkapena eguneratu da.");
+                    
+                    String LogDetallesPartido = String.format("Kod: %s | %s %d - %d %s | \nZelaia: %s | Epaileak: %s, %s", 
+                            kodPartidua, local, golesLocal, golesVisitante, visitante, zelaia, epailea1, epailea2);
+                    LoggerUtil_Arb.guardarLogArbitro("EMAITZA GORDE", LogDetallesPartido);
+                    
                     txtGolesLocal.setText("");
                     txtGolesVisitante.setText("");
 

@@ -39,6 +39,7 @@ public class VentanaAdministrador extends JFrame {
 
     public VentanaAdministrador() {
         setTitle("Panel de Administrador");
+        setIconImage(new ImageIcon("Imagenes16K/LOGONadm.png").getImage());
         setSize(920, 575);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
