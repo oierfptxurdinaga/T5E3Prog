@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<EskubaloiDatuak>
+    <Partiduak>
+        <Partidua>
+            <id_auto>1</id_auto>
+            <kod_partidua>J 1 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-05</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>28</Golak_lokala>
+            <Golak_kanpokoak>24</Golak_kanpokoak>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>2</id_auto>
+            <kod_partidua>J 1 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-05</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>21</Golak_lokala>
+            <Golak_kanpokoak>21</Golak_kanpokoak>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>3</id_auto>
+            <kod_partidua>J 1 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-05</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>25</Golak_lokala>
+            <Golak_kanpokoak>29</Golak_kanpokoak>
+            <Zelaia>Colegio Escolapios</Zelaia>
+            <Talde_lokala>Escolapios</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>4</id_auto>
+            <kod_partidua>J 2 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-12</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>31</Golak_lokala>
+            <Golak_kanpokoak>27</Golak_kanpokoak>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Escolapios</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>5</id_auto>
+            <kod_partidua>J 2 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-12</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>24</Golak_lokala>
+            <Golak_kanpokoak>24</Golak_kanpokoak>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>6</id_auto>
+            <kod_partidua>J 2 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-12</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>22</Golak_lokala>
+            <Golak_kanpokoak>30</Golak_kanpokoak>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>7</id_auto>
+            <kod_partidua>J 3 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-19</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>29</Golak_lokala>
+            <Golak_kanpokoak>26</Golak_kanpokoak>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>8</id_auto>
+            <kod_partidua>J 3 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-19</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>23</Golak_lokala>
+            <Golak_kanpokoak>31</Golak_kanpokoak>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>9</id_auto>
+            <kod_partidua>J 3 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-19</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>20</Golak_lokala>
+            <Golak_kanpokoak>22</Golak_kanpokoak>
+            <Zelaia>Colegio Escolapios</Zelaia>
+            <Talde_lokala>Escolapios</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>10</id_auto>
+            <kod_partidua>J 4 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-26</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>27</Golak_lokala>
+            <Golak_kanpokoak>27</Golak_kanpokoak>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>11</id_auto>
+            <kod_partidua>J 4 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-26</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>28</Golak_lokala>
+            <Golak_kanpokoak>25</Golak_kanpokoak>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>12</id_auto>
+            <kod_partidua>J 4 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-26</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>21</Golak_lokala>
+            <Golak_kanpokoak>23</Golak_kanpokoak>
+            <Zelaia>Colegio Escolapios</Zelaia>
+            <Talde_lokala>Escolapios</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>13</id_auto>
+            <kod_partidua>J 5 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-02</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>24</Golak_lokala>
+            <Golak_kanpokoak>26</Golak_kanpokoak>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>14</id_auto>
+            <kod_partidua>J 5 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-02</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>19</Golak_lokala>
+            <Golak_kanpokoak>30</Golak_kanpokoak>
+            <Zelaia>Colegio Escolapios</Zelaia>
+            <Talde_lokala>Escolapios</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>15</id_auto>
+            <kod_partidua>J 5 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-02</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>32</Golak_lokala>
+            <Golak_kanpokoak>28</Golak_kanpokoak>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>16</id_auto>
+            <kod_partidua>J 6 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-09</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>25</Golak_lokala>
+            <Golak_kanpokoak>25</Golak_kanpokoak>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>17</id_auto>
+            <kod_partidua>J 6 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-09</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>28</Golak_lokala>
+            <Golak_kanpokoak>22</Golak_kanpokoak>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>18</id_auto>
+            <kod_partidua>J 6 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-09</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>31</Golak_lokala>
+            <Golak_kanpokoak>26</Golak_kanpokoak>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Escolapios</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>19</id_auto>
+            <kod_partidua>J 7 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-16</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>24</Golak_lokala>
+            <Golak_kanpokoak>28</Golak_kanpokoak>
+            <Zelaia>Colegio Escolapios</Zelaia>
+            <Talde_lokala>Escolapios</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>20</id_auto>
+            <kod_partidua>J 7 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-16</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>27</Golak_lokala>
+            <Golak_kanpokoak>23</Golak_kanpokoak>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>21</id_auto>
+            <kod_partidua>J 7 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-16</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>25</Golak_lokala>
+            <Golak_kanpokoak>24</Golak_kanpokoak>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>22</id_auto>
+            <kod_partidua>J 8 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-23</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>29</Golak_lokala>
+            <Golak_kanpokoak>28</Golak_kanpokoak>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>23</id_auto>
+            <kod_partidua>J 8 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-23</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>30</Golak_lokala>
+            <Golak_kanpokoak>26</Golak_kanpokoak>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>24</id_auto>
+            <kod_partidua>J 8 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-23</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>26</Golak_lokala>
+            <Golak_kanpokoak>25</Golak_kanpokoak>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>Escolapios</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>25</id_auto>
+            <kod_partidua>J 9 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-30</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>22</Golak_lokala>
+            <Golak_kanpokoak>24</Golak_kanpokoak>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>26</id_auto>
+            <kod_partidua>J 9 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-30</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>27</Golak_lokala>
+            <Golak_kanpokoak>27</Golak_kanpokoak>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>27</id_auto>
+            <kod_partidua>J 9 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-30</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>31</Golak_lokala>
+            <Golak_kanpokoak>24</Golak_kanpokoak>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Escolapios</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>28</id_auto>
+            <kod_partidua>J 10 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-12-07</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>28</Golak_lokala>
+            <Golak_kanpokoak>25</Golak_kanpokoak>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>29</id_auto>
+            <kod_partidua>J 10 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-12-07</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>23</Golak_lokala>
+            <Golak_kanpokoak>22</Golak_kanpokoak>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Escolapios</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>30</id_auto>
+            <kod_partidua>J 10 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-12-07</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>31</Golak_lokala>
+            <Golak_kanpokoak>29</Golak_kanpokoak>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>31</id_auto>
+            <kod_partidua>J 1 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-04</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>32</id_auto>
+            <kod_partidua>J 1 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-04</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>33</id_auto>
+            <kod_partidua>J 1 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-04</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Benta Berri</Zelaia>
+            <Talde_lokala>Irauli Bosteko</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>34</id_auto>
+            <kod_partidua>J 2 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-11</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Irauli Bosteko</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>35</id_auto>
+            <kod_partidua>J 2 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-11</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>36</id_auto>
+            <kod_partidua>J 2 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-11</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>37</id_auto>
+            <kod_partidua>J 3 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-18</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>38</id_auto>
+            <kod_partidua>J 3 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-18</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>39</id_auto>
+            <kod_partidua>J 3 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-18</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Benta Berri</Zelaia>
+            <Talde_lokala>Irauli Bosteko</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>40</id_auto>
+            <kod_partidua>J 4 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-25</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>41</id_auto>
+            <kod_partidua>J 4 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-25</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>42</id_auto>
+            <kod_partidua>J 4 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-25</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Benta Berri</Zelaia>
+            <Talde_lokala>Irauli Bosteko</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>43</id_auto>
+            <kod_partidua>J 5 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-01</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>44</id_auto>
+            <kod_partidua>J 5 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-01</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Benta Berri</Zelaia>
+            <Talde_lokala>Irauli Bosteko</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>45</id_auto>
+            <kod_partidua>J 5 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-01</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>46</id_auto>
+            <kod_partidua>J 6 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-08</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>47</id_auto>
+            <kod_partidua>J 6 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-08</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>48</id_auto>
+            <kod_partidua>J 6 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-08</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Irauli Bosteko</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>49</id_auto>
+            <kod_partidua>J 7 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-15</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Benta Berri</Zelaia>
+            <Talde_lokala>Irauli Bosteko</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>50</id_auto>
+            <kod_partidua>J 7 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-15</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>51</id_auto>
+            <kod_partidua>J 7 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-15</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>52</id_auto>
+            <kod_partidua>J 8 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-22</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>53</id_auto>
+            <kod_partidua>J 8 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-22</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>54</id_auto>
+            <kod_partidua>J 8 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-22</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>Irauli Bosteko</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>55</id_auto>
+            <kod_partidua>J 9 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-29</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>56</id_auto>
+            <kod_partidua>J 9 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-29</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>57</id_auto>
+            <kod_partidua>J 9 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-29</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Irauli Bosteko</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>58</id_auto>
+            <kod_partidua>J 10 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-12-06</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>59</id_auto>
+            <kod_partidua>J 10 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-12-06</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Irauli Bosteko</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>60</id_auto>
+            <kod_partidua>J 10 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-12-06</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+    </Partiduak>
+</EskubaloiDatuak>

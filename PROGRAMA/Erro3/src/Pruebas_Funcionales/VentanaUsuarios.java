@@ -51,10 +51,11 @@ public class VentanaUsuarios extends JFrame {
         JPanel panel = new JPanel(null);
 
         lblBienvenida = new JLabel("¡Bienvenido!", SwingConstants.CENTER);
+        lblBienvenida.setForeground(new Color(0, 0, 0));
         lblBienvenida.setFont(new Font("Tahoma", Font.BOLD, 18));
         lblBienvenida.setBounds(0, 200, 780, 40);
         panel.add(lblBienvenida);
-
+        
         return panel;
     }
 
@@ -244,6 +245,4 @@ public class VentanaUsuarios extends JFrame {
             JOptionPane.showMessageDialog(this, "Errorea entrenatzaileak kargatzean: " + ex.getMessage());
         }
     }
-
-	
 }

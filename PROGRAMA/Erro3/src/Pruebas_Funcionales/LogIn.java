@@ -16,6 +16,7 @@ import Metodoak.LoggerUtil;
 import Metodoak.VerificacionDeDatos;
 import Metodoak.LoggerUtil_Arb;
 import java.awt.Font;
+import java.awt.Color;
 //import Prueba_De_Pojos.Pertsona;
 
 public class LogIn extends JFrame {
@@ -49,7 +50,7 @@ public class LogIn extends JFrame {
 		txtPassword.setBounds(120, 70, 180, 20);
 		getContentPane().add(txtPassword);
 
-		JButton btnLogin = new JButton("Zartu");
+		JButton btnLogin = new JButton("Sartu");
 		btnLogin.setBounds(110, 120, 120, 30);
 		getContentPane().add(btnLogin);
 
@@ -80,10 +81,16 @@ public class LogIn extends JFrame {
 		JLabel lblRealDate = new JLabel("Fecha Y Hora");
 		lblRealDate.setBounds(225, 168, 111, 12);
 		getContentPane().add(lblRealDate);
+		
+		JLabel lblNewLabel = new JLabel("👍🏻");
+		lblNewLabel.setForeground(new Color(247, 247, 247));
+		lblNewLabel.setBounds(120, 160, 44, 12);
+		getContentPane().add(lblNewLabel);
 
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 		
 		/* Dato curioso sobre los formatos de fecha y hora de Timer:
+		 * 
 		 * yyyy: año completo (2026)
 		 * YYYY: año de la semana (2025, porque la semana 1 de 2026 empieza en diciembre de 2025)
 		 * mm: minutos (00-59)
@@ -94,7 +101,9 @@ public class LogIn extends JFrame {
 		 * HH: hora en formato 24 horas (00-23)
 		 * ss: segundos (00-59)
 		 * SS: milisegundos (000-999)
+		 * sss: fracción de segundo (0.000-0.999) - aunque no es común usarlo, se refiere a la parte decimal de los segundos
 		 * SSS: microsegundos (000000-999999)
+		 * ssss: fracción de segundo con microsegundos (0.000000-0.999999) - aunque no es común usarlo, se refiere a la parte decimal de los segundos incluyendo microsegundos
 		 * SSSS: nanosegundos (000000000-999999999)
 		 * 
 		 * CONCLUSIÓN: Para mostrar la fecha y hora correctamente, se debe usar "yyyy/MM/dd HH:mm:ss" en lugar de "YYYY/MM/DD hh:mm:ss".

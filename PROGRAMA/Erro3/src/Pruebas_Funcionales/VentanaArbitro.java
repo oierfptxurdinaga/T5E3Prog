@@ -1,7 +1,21 @@
 package Pruebas_Funcionales;
 
 import javax.swing.*;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
 import java.awt.*;
+import java.io.File;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -20,6 +34,7 @@ public class VentanaArbitro extends JFrame {
 
     // Diccionario para relacionar equipos con sus respectivos campos
     private HashMap<String, String> camposPorEquipo;
+	private Node doc;
 
     public VentanaArbitro() {
         setTitle("Panel del Arbitro");
@@ -42,10 +57,12 @@ public class VentanaArbitro extends JFrame {
         pestañas.addTab("Taldeak Ikusi", Panel_Pestaña_Tarjetas_Equipos.crearPanelEquipos());
         pestañas.addTab("Emaitzak", new Pestaña_Resultados());
         
+        pestañas.addTab("XML Kudeaketa", crearPanelXMLArb());
+        
         JPanel panelCerrarSesion = Cerrar_Sesion.crearPanel(this);
         pestañas.addTab("Saioa Itxi", panelCerrarSesion);
 
-        add(pestañas);
+        getContentPane().add(pestañas);
     }
     
     private Vector<String> obtenerEpaileak() {
@@ -274,4 +291,192 @@ public class VentanaArbitro extends JFrame {
 
         return panel;
     }
+    
+
+private JPanel crearPanelXMLArb() {
+    JPanel panel = new JPanel();
+
+    JButton btnExportar = new JButton("Datuak XML-ra Esportatu");
+    btnExportar.setBounds(254, 30, 147, 21);
+    JButton btnImportar = new JButton("Datuak XML-tik Inportatu");
+    btnImportar.setBounds(431, 30, 145, 21);
+
+    // Botoiei ekintzak gehitu
+    btnExportar.addActionListener(e -> esportatuXMLArb());
+    btnImportar.addActionListener(e -> inportatuXMLArb());
+    panel.setLayout(null);
+
+    panel.add(btnExportar);
+    panel.add(btnImportar);
+    
+    JLabel lblNewLabel = new JLabel("Bakarrik Partiduak Esportatu eta importatuko dira");
+    lblNewLabel.setBounds(254, 200, 322, 13);
+    lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+    panel.add(lblNewLabel);
+
+    return panel; 
+}
+
+private void sortuElementua(Document doc, Element parent, String tagName, String textContent) {
+    Element el = doc.createElement(tagName);
+    el.appendChild(doc.createTextNode(textContent != null ? textContent : ""));
+    parent.appendChild(el);
+}
+
+private String lortuBalioa(Element element, String tagName) {
+    NodeList nl = element.getElementsByTagName(tagName);
+    if (nl != null && nl.getLength() > 0) {
+        return nl.item(0).getTextContent().trim();
+    }
+    return "";
+}
+
+private void setIntOrNull(PreparedStatement pstmt, int index, String value) throws java.sql.SQLException {
+    if (value == null || value.trim().isEmpty() || value.equalsIgnoreCase("null")) {
+        pstmt.setNull(index, java.sql.Types.INTEGER);
+    } else {
+        pstmt.setInt(index, Integer.parseInt(value.trim()));
+    }
+}
+
+private void setDateOrNull(PreparedStatement pstmt, int index, String value) throws java.sql.SQLException {
+    if (value == null || value.trim().isEmpty() || value.equalsIgnoreCase("null")) {
+        pstmt.setNull(index, java.sql.Types.DATE);
+    } else {
+        pstmt.setDate(index, java.sql.Date.valueOf(value.trim()));
+    }
+}
+
+private void setTimeOrNull(PreparedStatement pstmt, int index, String value) throws java.sql.SQLException {
+    if (value == null || value.trim().isEmpty() || value.equalsIgnoreCase("null")) {
+        pstmt.setNull(index, java.sql.Types.TIME);
+    } else {
+        pstmt.setTime(index, java.sql.Time.valueOf(value.trim()));
+    }
+}
+
+// --- XML ESPORTATZEKO METODOA ---
+private void esportatuXMLArb() {
+    try (Connection conn = Konexioa.getKonexioa()) {
+        if (conn == null) {
+            JOptionPane.showMessageDialog(this, "Errorea: Ezin izan da datu-basearekin konektatu.");
+            return;
+        }
+
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document doc = builder.newDocument();
+
+        // XML-aren Erro-elementua
+        Element rootElement = doc.createElement("EskubaloiDatuak");
+        doc.appendChild(rootElement);
+        
+        Element partiduakNode = doc.createElement("Partiduak");
+        rootElement.appendChild(partiduakNode);
+        
+        try (PreparedStatement pstmt = conn.prepareStatement("SELECT * FROM partidua");
+             ResultSet rs = pstmt.executeQuery()) {
+            while (rs.next()) {
+                Element item = doc.createElement("Partidua");
+                sortuElementua(doc, item, "id_auto", rs.getString("id_auto"));
+                sortuElementua(doc, item, "kod_partidua", rs.getString("kod_partidua"));
+                sortuElementua(doc, item, "denboraldia", rs.getString("denboraldia"));
+                java.sql.Date data = rs.getDate("Data");
+                sortuElementua(doc, item, "Data", data != null ? data.toString() : "");
+                java.sql.Time ordua = rs.getTime("Ordua");
+                sortuElementua(doc, item, "Ordua", ordua != null ? ordua.toString() : "");
+                sortuElementua(doc, item, "Golak_lokala", rs.getString("Golak_lokala"));
+                sortuElementua(doc, item, "Golak_kanpokoak", rs.getString("Golak_kanpokoak"));
+                sortuElementua(doc, item, "Zelaia", rs.getString("Zelaia"));
+                sortuElementua(doc, item, "Talde_lokala", rs.getString("Talde_lokala"));
+                sortuElementua(doc, item, "Kampoko_taldea", rs.getString("Kampoko_taldea"));
+                sortuElementua(doc, item, "epailea1", rs.getString("epailea1"));
+                sortuElementua(doc, item, "epailea2", rs.getString("epailea2"));
+                partiduakNode.appendChild(item);
+            }
+        }
+        
+        // Fitxategia Gorde
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        Transformer transformer = transformerFactory.newTransformer();
+        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+        DOMSource source = new DOMSource(doc); 
+        
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setDialogTitle("Gorde XML fitxategia");
+        if (fileChooser.showSaveDialog(this) == JFileChooser.APPROVE_OPTION) {
+            File file = fileChooser.getSelectedFile();
+            if(!file.getName().toLowerCase().endsWith(".xml")) {
+                file = new File(file.getParentFile(), file.getName() + ".xml");
+            }
+            StreamResult result = new StreamResult(file);
+            transformer.transform(source, result);
+            JOptionPane.showMessageDialog(this, "Datu-base osoa XML fitxategian behar bezala esportatu da!");
+        }
+        
+    } catch (Exception ex) { 
+        JOptionPane.showMessageDialog(this, "Errorea XML esportatzean: " + ex.getMessage());
+        ex.printStackTrace();
+    }
+}
+
+// --- XML INPORTATZEKO METODOA ---
+private void inportatuXMLArb() {
+    try (Connection conn = Konexioa.getKonexioa()) {
+        if (conn == null) {
+            JOptionPane.showMessageDialog(this, "Errorea: Ezin izan da datu-basearekin konektatu.");
+            return;
+        }
+
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setDialogTitle("Aukeratu inportatzeko XML fitxategia");
+        if (fileChooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
+            File file = fileChooser.getSelectedFile();
+
+            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder builder = factory.newDocumentBuilder();
+            Document doc = builder.parse(file);
+            doc.getDocumentElement().normalize();
+            
+            try (PreparedStatement psOff = conn.prepareStatement("SET FOREIGN_KEY_CHECKS=0")) {
+                psOff.execute();
+            }
+            
+            // 5. INPORTATU PARTIDUAK
+            NodeList nlPartidua = doc.getElementsByTagName("Partidua");
+            String sqlPar = "INSERT INTO partidua (id_auto, kod_partidua, denboraldia, Data, Ordua, Golak_lokala, Golak_kanpokoak, Zelaia, Talde_lokala, Kampoko_taldea, epailea1, epailea2) " +
+                            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) " +
+                            "ON DUPLICATE KEY UPDATE kod_partidua=VALUES(kod_partidua), denboraldia=VALUES(denboraldia), Data=VALUES(Data), Ordua=VALUES(Ordua), Golak_lokala=VALUES(Golak_lokala), Golak_kanpokoak=VALUES(Golak_kanpokoak), Zelaia=VALUES(Zelaia), Talde_lokala=VALUES(Talde_lokala), Kampoko_taldea=VALUES(Kampoko_taldea), epailea1=VALUES(epailea1), epailea2=VALUES(epailea2)";
+            
+            try (PreparedStatement ps = conn.prepareStatement(sqlPar)) {
+                for (int i = 0; i < nlPartidua.getLength(); i++) {
+                    Element e = (Element) nlPartidua.item(i);
+                    setIntOrNull(ps, 1, lortuBalioa(e, "id_auto"));
+                    ps.setString(2, lortuBalioa(e, "kod_partidua"));
+                    ps.setString(3, lortuBalioa(e, "denboraldia"));
+                    setDateOrNull(ps, 4, lortuBalioa(e, "Data"));
+                    setTimeOrNull(ps, 5, lortuBalioa(e, "Ordua"));
+                    setIntOrNull(ps, 6, lortuBalioa(e, "Golak_lokala"));
+                    setIntOrNull(ps, 7, lortuBalioa(e, "Golak_kanpokoak"));
+                    ps.setString(8, lortuBalioa(e, "Zelaia"));
+                    ps.setString(9, lortuBalioa(e, "Talde_lokala"));
+                    ps.setString(10, lortuBalioa(e, "Kampoko_taldea"));
+                    ps.setString(11, lortuBalioa(e, "epailea1"));
+                    ps.setString(12, lortuBalioa(e, "epailea2"));
+                    ps.executeUpdate();
+                }
+            } // Cerramos el try de PreparedStatement (ps)
+            
+            // AQUÍ ESTABA EL OTRO FALLO: faltaba el psOn.execute();
+            try (PreparedStatement psOn = conn.prepareStatement("SET FOREIGN_KEY_CHECKS=1")) {
+                psOn.execute(); 
+            }
+            
+            JOptionPane.showMessageDialog(this, "Datu-base osoa XML fitxategitik behar bezala inportatu da!");
+        }
+    } catch (Exception ex) {
+        JOptionPane.showMessageDialog(this, "Errorea XML inportatzean: " + ex.getMessage());
+        ex.printStackTrace();
+    }
+}
 }
