@@ -420,63 +420,73 @@ private void esportatuXMLArb() {
     }
 }
 
-// --- XML INPORTATZEKO METODOA ---
+//--- XML INPORTATZEKO METODOA ---
 private void inportatuXMLArb() {
-    try (Connection conn = Konexioa.getKonexioa()) {
-        if (conn == null) {
-            JOptionPane.showMessageDialog(this, "Errorea: Ezin izan da datu-basearekin konektatu.");
-            return;
-        }
+ try (Connection conn = Konexioa.getKonexioa()) {
+     if (conn == null) {
+         JOptionPane.showMessageDialog(this, "Errorea: Ezin izan da datu-basearekin konektatu.");
+         return;
+     }
 
-        JFileChooser fileChooser = new JFileChooser();
-        fileChooser.setDialogTitle("Aukeratu inportatzeko XML fitxategia");
-        if (fileChooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
-            File file = fileChooser.getSelectedFile();
+     JFileChooser fileChooser = new JFileChooser();
+     fileChooser.setDialogTitle("Aukeratu inportatzeko XML fitxategia");
+     if (fileChooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
+         File file = fileChooser.getSelectedFile();
 
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder builder = factory.newDocumentBuilder();
-            Document doc = builder.parse(file);
-            doc.getDocumentElement().normalize();
-            
-            try (PreparedStatement psOff = conn.prepareStatement("SET FOREIGN_KEY_CHECKS=0")) {
-                psOff.execute();
-            }
-            
-            // 5. INPORTATU PARTIDUAK
-            NodeList nlPartidua = doc.getElementsByTagName("Partidua");
-            String sqlPar = "INSERT INTO partidua (id_auto, kod_partidua, denboraldia, Data, Ordua, Golak_lokala, Golak_kanpokoak, Zelaia, Talde_lokala, Kampoko_taldea, epailea1, epailea2) " +
-                            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) " +
-                            "ON DUPLICATE KEY UPDATE kod_partidua=VALUES(kod_partidua), denboraldia=VALUES(denboraldia), Data=VALUES(Data), Ordua=VALUES(Ordua), Golak_lokala=VALUES(Golak_lokala), Golak_kanpokoak=VALUES(Golak_kanpokoak), Zelaia=VALUES(Zelaia), Talde_lokala=VALUES(Talde_lokala), Kampoko_taldea=VALUES(Kampoko_taldea), epailea1=VALUES(epailea1), epailea2=VALUES(epailea2)";
-            
-            try (PreparedStatement ps = conn.prepareStatement(sqlPar)) {
-                for (int i = 0; i < nlPartidua.getLength(); i++) {
-                    Element e = (Element) nlPartidua.item(i);
-                    setIntOrNull(ps, 1, lortuBalioa(e, "id_auto"));
-                    ps.setString(2, lortuBalioa(e, "kod_partidua"));
-                    ps.setString(3, lortuBalioa(e, "denboraldia"));
-                    setDateOrNull(ps, 4, lortuBalioa(e, "Data"));
-                    setTimeOrNull(ps, 5, lortuBalioa(e, "Ordua"));
-                    setIntOrNull(ps, 6, lortuBalioa(e, "Golak_lokala"));
-                    setIntOrNull(ps, 7, lortuBalioa(e, "Golak_kanpokoak"));
-                    ps.setString(8, lortuBalioa(e, "Zelaia"));
-                    ps.setString(9, lortuBalioa(e, "Talde_lokala"));
-                    ps.setString(10, lortuBalioa(e, "Kampoko_taldea"));
-                    ps.setString(11, lortuBalioa(e, "epailea1"));
-                    ps.setString(12, lortuBalioa(e, "epailea2"));
-                    ps.executeUpdate();
-                }
-            } // Cerramos el try de PreparedStatement (ps)
-            
-            // AQUÍ ESTABA EL OTRO FALLO: faltaba el psOn.execute();
-            try (PreparedStatement psOn = conn.prepareStatement("SET FOREIGN_KEY_CHECKS=1")) {
-                psOn.execute(); 
-            }
-            
-            JOptionPane.showMessageDialog(this, "Datu-base osoa XML fitxategitik behar bezala inportatu da!");
-        }
-    } catch (Exception ex) {
-        JOptionPane.showMessageDialog(this, "Errorea XML inportatzean: " + ex.getMessage());
-        ex.printStackTrace();
-    }
+         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+         DocumentBuilder builder = factory.newDocumentBuilder();
+         Document doc = builder.parse(file);
+         doc.getDocumentElement().normalize();
+         
+         try (PreparedStatement psOff = conn.prepareStatement("SET FOREIGN_KEY_CHECKS=0")) {
+             psOff.execute();
+         }
+         
+         // 1. VACIAR LA TABLA ANTES DE IMPORTAR PARA UNA RESTAURACIÓN LIMPIA
+         try (PreparedStatement psDelete = conn.prepareStatement("DELETE FROM partidua")) {
+             psDelete.executeUpdate();
+         }
+         
+         // 2. INPORTATU PARTIDUAK
+         NodeList nlPartidua = doc.getElementsByTagName("Partidua");
+         String sqlPar = "INSERT INTO partidua (id_auto, kod_partidua, denboraldia, Data, Ordua, Golak_lokala, Golak_kanpokoak, Zelaia, Talde_lokala, Kampoko_taldea, epailea1, epailea2) " +
+                         "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+         
+         try (PreparedStatement ps = conn.prepareStatement(sqlPar)) {
+             for (int i = 0; i < nlPartidua.getLength(); i++) {
+                 Element e = (Element) nlPartidua.item(i);
+                 setIntOrNull(ps, 1, lortuBalioa(e, "id_auto"));
+                 ps.setString(2, lortuBalioa(e, "kod_partidua"));
+                 ps.setString(3, lortuBalioa(e, "denboraldia"));
+                 setDateOrNull(ps, 4, lortuBalioa(e, "Data"));
+                 setTimeOrNull(ps, 5, lortuBalioa(e, "Ordua"));
+                 setIntOrNull(ps, 6, lortuBalioa(e, "Golak_lokala"));
+                 setIntOrNull(ps, 7, lortuBalioa(e, "Golak_kanpokoak"));
+                 ps.setString(8, lortuBalioa(e, "Zelaia"));
+                 ps.setString(9, lortuBalioa(e, "Talde_lokala"));
+                 ps.setString(10, lortuBalioa(e, "Kampoko_taldea"));
+                 ps.setString(11, lortuBalioa(e, "epailea1"));
+                 ps.setString(12, lortuBalioa(e, "epailea2"));
+                 ps.executeUpdate();
+             }
+         }
+         
+         try (PreparedStatement psOn = conn.prepareStatement("SET FOREIGN_KEY_CHECKS=1")) {
+             psOn.execute(); 
+         }
+         
+         // 3. ACTUALIZAR LAS CLASIFICACIONES DESPUÉS DE LA IMPORTACIÓN
+         try (CallableStatement cstmt1 = conn.prepareCall("{CALL ActualizarClasificacion('24-25')}");
+              CallableStatement cstmt2 = conn.prepareCall("{CALL ActualizarClasificacion('25-26')}")) {
+             cstmt1.execute();
+             cstmt2.execute();
+         }
+         
+         JOptionPane.showMessageDialog(this, "Datu-base osoa XML fitxategitik behar bezala inportatu da!");
+     }
+ } catch (Exception ex) {
+     JOptionPane.showMessageDialog(this, "Errorea XML inportatzean: " + ex.getMessage());
+     ex.printStackTrace();
+ }
 }
 }

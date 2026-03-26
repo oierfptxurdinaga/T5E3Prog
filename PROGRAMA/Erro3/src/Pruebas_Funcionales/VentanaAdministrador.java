@@ -522,6 +522,18 @@ public class VentanaAdministrador extends JFrame {
                 try (PreparedStatement psOff = conn.prepareStatement("SET FOREIGN_KEY_CHECKS=0")) {
 					psOff.execute();
 				}
+                
+                try (PreparedStatement psDelPartidua = conn.prepareStatement("DELETE FROM partidua");
+                        PreparedStatement psDelEpailea = conn.prepareStatement("DELETE FROM epailea");
+                        PreparedStatement psDelEntrenatzailea = conn.prepareStatement("DELETE FROM entrenatzailea");
+                        PreparedStatement psDelJokalaria = conn.prepareStatement("DELETE FROM jokalaria");
+                        PreparedStatement psDelPertsona = conn.prepareStatement("DELETE FROM pertsona")) {
+                       psDelPartidua.executeUpdate();
+                       psDelEpailea.executeUpdate();
+                       psDelEntrenatzailea.executeUpdate();
+                       psDelJokalaria.executeUpdate();
+                       psDelPertsona.executeUpdate();
+                   }
 
                 // 1. INPORTATU PERTSONAK (Lehenik inportatu behar dira jokalari, arbitro eta entrenatzaileak baino lehen)
                 NodeList nlPertsona = doc.getElementsByTagName("Pertsona");
