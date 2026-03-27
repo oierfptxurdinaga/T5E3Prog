@@ -28,6 +28,7 @@ import Metodoak.Traspaso_Y_Confirmacion;
 import Metodoak.AutoNANaGenerator;
 
 import POJOAK3.Pertsona;
+import Pruebas_Funcionales.VentanaArbitro.PanelConFondo;
 import DAO.PertsonaDAO;
 
 public class VentanaAdministrador extends JFrame {
@@ -70,7 +71,8 @@ public class VentanaAdministrador extends JFrame {
     // 1. VER USUARIOS (LOCAL - datos.dat)
     // ==========================================
     private JPanel crearPanelUsuarios() {
-        JPanel panel = new JPanel(new BorderLayout());
+        //JPanel panel = new JPanel(new BorderLayout());
+    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new BorderLayout());
         areaUsuarios = new JTextArea();
         areaUsuarios.setEditable(false);
         panel.add(new JScrollPane(areaUsuarios), BorderLayout.CENTER);
@@ -106,7 +108,8 @@ public class VentanaAdministrador extends JFrame {
     // 2. CREAR USUARIOS (LOCAL - datos.dat)
     // ==========================================
     private JPanel crearPanelCrearUsuario() {
-        JPanel panel = new JPanel(new GridLayout(6, 2, 10, 10));
+        //JPanel panel = new JPanel(new GridLayout(6, 2, 10, 10));
+    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new GridLayout(6, 2, 10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
         JTextField txtIzena = new JTextField();
@@ -146,7 +149,8 @@ public class VentanaAdministrador extends JFrame {
     // 3. ELIMINAR USUARIOS (LOCAL - datos.dat)
     // ==========================================
     private JPanel crearPanelEliminarUsuario() {
-        JPanel panel = new JPanel();
+        //JPanel panel = new JPanel();
+    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new FlowLayout());
         panel.add(new JLabel("Erabiltzailea ezabatzeko (Erabiltzaile-izena):"));
         JTextField txtUsuarioEliminar = new JTextField(15);
         panel.add(txtUsuarioEliminar);
@@ -188,7 +192,8 @@ public class VentanaAdministrador extends JFrame {
     // 4. CREAR JUGADOR (MySQL - BASE DE DATOS)
     // ==========================================
     private JPanel crearPanelCrearJugador() {
-        JPanel panel = new JPanel(new GridLayout(7, 2, 10, 10));
+        //JPanel panel = new JPanel(new GridLayout(7, 2, 10, 10));
+    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new GridLayout(7, 2, 10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
         JTextField txtNombre = new JTextField();
@@ -261,7 +266,8 @@ public class VentanaAdministrador extends JFrame {
     // 5. ELIMINAR JUGADOR (MySQL - BASE DE DATOS)
     // ==========================================
     private JPanel crearPanelEliminarJugador() {
-        JPanel panel = new JPanel();
+        //JPanel panel = new JPanel();
+    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new FlowLayout());
         panel.add(new JLabel("Jokalariaren NAN-a ezabatzeko:"));
         JTextField txtNanaJugador = new JTextField(10); 
         panel.add(txtNanaJugador);
@@ -315,7 +321,8 @@ public class VentanaAdministrador extends JFrame {
     // 7. GENERAR XML (MySQL - BASE DE DATOS) Todavia no esta hecho.
     // ==========================================
     private JPanel crearPanelXML() {
-        JPanel panel = new JPanel();
+        //JPanel panel = new JPanel();
+    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", null);
         panel.setLayout(new FlowLayout(FlowLayout.CENTER, 30, 30));
 
         JButton btnExportar = new JButton("Datuak XML-ra Esportatu");
@@ -634,6 +641,23 @@ public class VentanaAdministrador extends JFrame {
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(this, "Errorea XML inportatzean: " + ex.getMessage());
             ex.printStackTrace();
+        }
+    }
+    
+    class PanelConFondo extends JPanel {
+        private Image imagen;
+
+        public PanelConFondo(String rutaImagen, LayoutManager layout) {
+            super(layout);
+            imagen = new ImageIcon(rutaImagen).getImage();
+        }
+
+        @Override
+        protected void paintComponent(Graphics g) {
+            super.paintComponent(g);
+            if (imagen != null) {
+                g.drawImage(imagen, 0, 0, getWidth(), getHeight(), this);
+            }
         }
     }
 }

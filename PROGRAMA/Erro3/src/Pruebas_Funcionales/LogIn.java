@@ -10,7 +10,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
 //import java.awt.Toolkit;
+import java.awt.event.MouseEvent;
 
 import Metodoak.LoggerUtil;
 import Metodoak.VerificacionDeDatos;
@@ -18,6 +20,7 @@ import Metodoak.LoggerUtil_Arb;
 import java.awt.Font;
 import java.awt.Color;
 //import Prueba_De_Pojos.Pertsona;
+import java.awt.Cursor;
 
 public class LogIn extends JFrame {
 
@@ -32,7 +35,17 @@ public class LogIn extends JFrame {
 		setSize(350, 220);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setResizable(false);
 		getContentPane().setLayout(null);
+		
+		ImageIcon Fondo = new ImageIcon("Imagenes16K/Fondo.jpg");
+	    Image Fondo2 = Fondo.getImage().getScaledInstance(350, 220, Image.SCALE_SMOOTH);
+	    
+	    JLabel fondoPrincipal = new JLabel(new ImageIcon(Fondo2));
+	    
+	    fondoPrincipal.setLayout(null);
+	    
+	    setContentPane(fondoPrincipal);
 
 		JLabel lblUsuario = new JLabel("Usuario:");
 		lblUsuario.setBounds(20, 30, 100, 20);
@@ -49,9 +62,30 @@ public class LogIn extends JFrame {
 		txtPassword = new JPasswordField();
 		txtPassword.setBounds(120, 70, 180, 20);
 		getContentPane().add(txtPassword);
+		
+		ImageIcon texturaBotonOriginal = new ImageIcon("Imagenes16K/MarmolTexture.jpg");
+		Image texturaBoton = texturaBotonOriginal.getImage().getScaledInstance(120, 30, Image.SCALE_SMOOTH);
 
-		JButton btnLogin = new JButton("Sartu");
+		Color lightGoldenrod = new Color(238, 221, 130); // El color personalizado que queremos
+		JButton btnLogin = new JButton("SARTU", new ImageIcon(texturaBoton));
 		btnLogin.setBounds(110, 120, 120, 30);
+		btnLogin.setHorizontalTextPosition(SwingConstants.CENTER);
+		btnLogin.setVerticalTextPosition(SwingConstants.CENTER);
+		btnLogin.setContentAreaFilled(false); // Quita el fondo gris
+		btnLogin.setBorderPainted(false);     // Quita el borde 
+		btnLogin.setFocusPainted(false);  	  // Quita el recuadro que aparece al hacer clic
+		btnLogin.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent evt) {
+				btnLogin.setForeground(lightGoldenrod); // Se pone de otro color, en este caso del que hemos selecionado antes
+				btnLogin.setCursor(new Cursor(Cursor.HAND_CURSOR)); // Cursor de manita
+			}
+			@Override
+			public void mouseExited(MouseEvent evt) {
+				btnLogin.setForeground(Color.BLACK); // Vuelve a negro al salir
+			}
+		});			
+		
 		getContentPane().add(btnLogin);
 
 		btnLogin.addActionListener(e -> verificarDatos());
@@ -81,11 +115,6 @@ public class LogIn extends JFrame {
 		JLabel lblRealDate = new JLabel("Fecha Y Hora");
 		lblRealDate.setBounds(225, 168, 111, 12);
 		getContentPane().add(lblRealDate);
-		
-		JLabel lblNewLabel = new JLabel("👍🏻");
-		lblNewLabel.setForeground(new Color(247, 247, 247));
-		lblNewLabel.setBounds(120, 160, 44, 12);
-		getContentPane().add(lblNewLabel);
 
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 		
@@ -239,3 +268,24 @@ public class LogIn extends JFrame {
 // =========================================================
 // 👤 USUARIO NORMAL 👤
 // =========================================================
+
+
+/* Dato curioso sobre los formatos de fecha y hora de Timer:
+ * 
+ * yyyy: año completo (2026)
+ * YYYY: año de la semana (2025, porque la semana 1 de 2026 empieza en diciembre de 2025)
+ * mm: minutos (00-59)
+ * MM: meses (01-12)
+ * dd: día del mes (01-31)
+ * DD: día del año (001-365)
+ * hh: hora en formato 12 horas (01-12)
+ * HH: hora en formato 24 horas (00-23)
+ * ss: segundos (00-59)
+ * SS: milisegundos (000-999)
+ * sss: fracción de segundo (0.000-0.999) - aunque no es común usarlo, se refiere a la parte decimal de los segundos
+ * SSS: microsegundos (000000-999999)
+ * ssss: fracción de segundo con microsegundos (0.000000-0.999999) - aunque no es común usarlo, se refiere a la parte decimal de los segundos incluyendo microsegundos
+ * SSSS: nanosegundos (000000000-999999999)
+ * 
+ * CONCLUSIÓN: Para mostrar la fecha y hora correctamente, se debe usar "yyyy/MM/dd HH:mm:ss" en lugar de "YYYY/MM/DD hh:mm:ss".
+ */

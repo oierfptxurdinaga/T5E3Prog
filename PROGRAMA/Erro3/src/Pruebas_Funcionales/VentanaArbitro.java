@@ -27,6 +27,7 @@ import java.util.Vector;
 import Metodoak.Cerrar_Sesion;
 import Metodoak.Panel_Pestaña_Tarjetas_Equipos;
 import Metodoak.Pestaña_Resultados;
+import Pruebas_Funcionales.VentanaUsuarios.PanelConFondo;
 import Metodoak.Konexioa;
 import Metodoak.LoggerUtil_Arb;
 
@@ -39,9 +40,11 @@ public class VentanaArbitro extends JFrame {
     public VentanaArbitro() {
         setTitle("Panel del Arbitro");
         setIconImage(new ImageIcon("Imagenes16K/LOGONarb.png").getImage());
-        setSize(850, 600); 
+        setSize(800, 500); 
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setResizable(false);
+        getContentPane().setLayout(null);
 
         // Inicializar relación equipo -> campo (Basado en tu base de datos)
         camposPorEquipo = new HashMap<>();
@@ -92,8 +95,9 @@ public class VentanaArbitro extends JFrame {
     }
 
     private JPanel crearPanelPrincipal() {
-        JPanel panel = new JPanel(null);
-        panel.setBackground(Color.WHITE);
+        //JPanel panel = new JPanel(null);
+        //panel.setBackground(Color.WHITE);
+    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", null);
 
         // ------------------ FILA 1: Denboraldia y Jardunaldia ------------------
         JLabel lblTemporada = new JLabel("Denboraldia:");
@@ -294,12 +298,13 @@ public class VentanaArbitro extends JFrame {
     
 
 private JPanel crearPanelXMLArb() {
-    JPanel panel = new JPanel();
+    //JPanel panel = new JPanel();
+	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", null);
 
     JButton btnExportar = new JButton("Datuak XML-ra Esportatu");
-    btnExportar.setBounds(254, 30, 147, 21);
+    btnExportar.setBounds(204, 30, 147, 21);
     JButton btnImportar = new JButton("Datuak XML-tik Inportatu");
-    btnImportar.setBounds(431, 30, 145, 21);
+    btnImportar.setBounds(381, 30, 145, 21);
 
     // Botoiei ekintzak gehitu
     btnExportar.addActionListener(e -> esportatuXMLArb());
@@ -310,7 +315,7 @@ private JPanel crearPanelXMLArb() {
     panel.add(btnImportar);
     
     JLabel lblNewLabel = new JLabel("Bakarrik Partiduak Esportatu eta importatuko dira");
-    lblNewLabel.setBounds(254, 200, 322, 13);
+    lblNewLabel.setBounds(204, 199, 322, 13);
     lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
     panel.add(lblNewLabel);
 
@@ -488,5 +493,22 @@ private void inportatuXMLArb() {
      JOptionPane.showMessageDialog(this, "Errorea XML inportatzean: " + ex.getMessage());
      ex.printStackTrace();
  }
+}
+
+class PanelConFondo extends JPanel {
+    private Image imagen;
+
+    public PanelConFondo(String rutaImagen, LayoutManager layout) {
+        super(layout);
+        imagen = new ImageIcon(rutaImagen).getImage();
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        if (imagen != null) {
+            g.drawImage(imagen, 0, 0, getWidth(), getHeight(), this);
+        }
+    }
 }
 }
