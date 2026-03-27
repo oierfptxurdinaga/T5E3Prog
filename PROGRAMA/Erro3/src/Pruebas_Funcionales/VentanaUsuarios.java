@@ -31,8 +31,11 @@ public class VentanaUsuarios extends JFrame {
         setSize(800, 500);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setResizable(false);
+        getContentPane().setLayout(null);
 
         JTabbedPane pestañas = new JTabbedPane();
+        pestañas.setBounds(0, 0, 785, 460);
         pestañas.addTab("Hasiera", crearPanelInicio());
         pestañas.addTab("Taldeak Ikusi", Panel_Pestaña_Tarjetas_Equipos.crearPanelEquipos());
         pestañas.addTab("Jokalariak", crearPanelDeLosJugadores()); // Datu-basera konektatuta
@@ -48,7 +51,8 @@ public class VentanaUsuarios extends JFrame {
     // PESTAÑA INICIO
     // =======================
     private JPanel crearPanelInicio() {
-        JPanel panel = new JPanel(null);
+        //JPanel panel = new JPanel(null);
+        JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", null);
 
         lblBienvenida = new JLabel("¡Bienvenido!", SwingConstants.CENTER);
         lblBienvenida.setForeground(new Color(0, 0, 0));
@@ -63,7 +67,8 @@ public class VentanaUsuarios extends JFrame {
     // PESTAÑA PERFIL
     // =======================
     private JPanel crearPanelPerfil() {
-        JPanel panel = new JPanel(null);
+        //JPanel panel = new JPanel(null);
+    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", null);
 
         JLabel lblInfo = new JLabel("Profilaren informazioa");
         lblInfo.setFont(new Font("Tahoma", Font.BOLD, 16));
@@ -114,10 +119,12 @@ public class VentanaUsuarios extends JFrame {
     // PESTAÑA JUGADORES (CONECTADA A MYSQL)
     // ==========================================
     private JPanel crearPanelDeLosJugadores() {
-        JPanel panel = new JPanel(new BorderLayout(10, 10));
+        //JPanel panel = new JPanel(new BorderLayout(10, 10));
+    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new BorderLayout(10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
 
         JPanel panelTop = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        panelTop.setBackground(new Color(255, 255, 255, 123));
         JLabel lblTaldea = new JLabel("Aukeratu taldea: ");
         lblTaldea.setFont(new Font("Arial", Font.BOLD, 14));
         
@@ -183,10 +190,11 @@ public class VentanaUsuarios extends JFrame {
     // PESTAÑA ENTRENADORES (CONECTADA A MYSQL CON DAO)
     // ==========================================
     private JPanel crearPanelDeLosEntrenadores() {
-        JPanel panel = new JPanel(new BorderLayout(10, 10));
+    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new BorderLayout(10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
 
         JPanel panelTop = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        panelTop.setBackground(new Color(255, 255, 255, 123));
         JLabel lblTaldea = new JLabel("Aukeratu taldea: ");
         lblTaldea.setFont(new Font("Arial", Font.BOLD, 14));
         
@@ -243,6 +251,26 @@ public class VentanaUsuarios extends JFrame {
             }
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(this, "Errorea entrenatzaileak kargatzean: " + ex.getMessage());
+        }
+    }
+    
+ // Añade esto como una clase interna dentro de VentanaUsuarios
+    class PanelConFondo extends JPanel {
+        private Image imagen;
+
+        public PanelConFondo(String rutaImagen, LayoutManager layout) {
+            super(layout);
+            // Carga la imagen desde la ruta proporcionada
+            imagen = new ImageIcon(rutaImagen).getImage();
+        }
+
+        @Override
+        protected void paintComponent(Graphics g) {
+            super.paintComponent(g);
+            if (imagen != null) {
+                // Dibuja la imagen ocupando todo el tamaño del panel
+                g.drawImage(imagen, 0, 0, getWidth(), getHeight(), this);
+            }
         }
     }
 }
