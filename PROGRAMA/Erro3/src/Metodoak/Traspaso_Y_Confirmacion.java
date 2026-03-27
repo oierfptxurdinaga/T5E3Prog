@@ -35,7 +35,8 @@ public class Traspaso_Y_Confirmacion {
 
     // Método que genera todo el panel visual para los traspasos
     public static JPanel crearPanelTraspaso() {
-        JPanel panel = new JPanel(new GridLayout(6, 2, 10, 10));
+        //JPanel panel = new JPanel(new GridLayout(6, 2, 10, 10));
+    	PanelConFondo panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new GridLayout(6, 2, 10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
         JComboBox<String> cbEquipoOrigen = new JComboBox<>(ZERRENDA_TALDEAK);
@@ -172,5 +173,23 @@ public class Traspaso_Y_Confirmacion {
         });
 
         return panel;
+    }
+    
+ // --- CLASE INTERNA PARA EL FONDO ---
+    static class PanelConFondo extends JPanel {
+        private Image imagen;
+
+        public PanelConFondo(String rutaImagen, LayoutManager layout) {
+            super(layout);
+            imagen = new ImageIcon(rutaImagen).getImage();
+        }
+
+        @Override
+        protected void paintComponent(Graphics g) {
+            super.paintComponent(g);
+            if (imagen != null) {
+                g.drawImage(imagen, 0, 0, getWidth(), getHeight(), this);
+            }
+        }
     }
 }
