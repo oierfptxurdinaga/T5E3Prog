@@ -12,7 +12,6 @@ import java.time.format.DateTimeFormatter;
  * Epaileen ekintzak eta gertakariak testu-fitxategi batean (log) erregistratzeko 
  * erabiltzen den tresna edo klase laguntzailea.
  */
-
 public class LoggerUtil_Arb {
 	
 	/**
@@ -23,7 +22,6 @@ public class LoggerUtil_Arb {
      * @param accion Epaileak burutu duen ekintzaren izena edo deskribapen laburra.
      * @param detalles Ekintza horri buruzko xehetasun edo informazio gehigarria.
      */
-
     public static void guardarLogArbitro(String accion, String detalles) {
         
         File directorio = new File("Log History");

@@ -7,12 +7,16 @@ import java.sql.ResultSet;
 /**
  * DNI edo NAN (NANa) ausazko bat sortzen duen eta datu-basean ez dela existitzen 
  * ziurtatzen duen klase laguntzailea.
- */
-
+ * 
+ * @author T5
+ * @version 1.0
+ * @since 1.0
+ * 
+ */   
 public class AutoNANaGenerator {
-
+	
 	/**
-     * Ausazko NAN berri bat sortzen du (8 zenbaki eta letra bat) eta 
+	 *  Ausazko NAN berri bat sortzen du (8 zenbaki eta letra bat) eta 
      * 'jokalaria' taulan jadanik ez dagoela egiaztatzen du.
      * Existitzen bada, prozesua errepikatzen du NAN esklusibo bat lortu arte.
      *
@@ -20,7 +24,6 @@ public class AutoNANaGenerator {
      * @return Sortutako eta datu-basean esklusiboa den NAN katea (String).
      * @throws Exception SQL kontsultak egiterakoan arazorik baldin badago erroreak kudeatzeko.
      */
-	
     public static String generarNANaUnico(Connection conn) throws Exception {
         String letras = "TRWAGMYFPDXBNJZSQVHLCKE";
         String nuevoNANa;

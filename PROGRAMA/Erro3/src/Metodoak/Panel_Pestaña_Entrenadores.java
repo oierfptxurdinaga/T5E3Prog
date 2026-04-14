@@ -11,7 +11,6 @@ import java.sql.ResultSet;
  * Entrenatzaileen informazioa eta bakoitzari dagokion taldeko jokalariak 
  * bistaratzen dituen interfaze grafikoaren (GUI) panela kudeatzen duen klasea.
  */
-
 public class Panel_Pestaña_Entrenadores {
 
 	/**
@@ -21,7 +20,6 @@ public class Panel_Pestaña_Entrenadores {
      *
      * @return Eraikitako eta osagaiz betetako {@link JPanel} objektua.
      */
-	
     public static JPanel crearPanelDeLosEntrenadores() {
         JPanel panel = new JPanel(new BorderLayout(10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
@@ -66,7 +64,6 @@ public class Panel_Pestaña_Entrenadores {
      *
      * @param modelo Datuak bistaratzeko erabiliko den taularen eredua ({@link DefaultTableModel}).
      */
-    
     private static void cargarEntrenadoresDesdeBD(DefaultTableModel modelo) {
         modelo.setRowCount(0);
 
@@ -99,7 +96,6 @@ public class Panel_Pestaña_Entrenadores {
      * @param taldea Kontsultatu nahi den taldearen izena.
      * @param modeloLista Jokalariak bistaratuko diren zerrendaren eredua ({@link DefaultListModel}).
      */
-    
     private static void cargarJugadoresDelEquipo(String taldea, DefaultListModel<String> modeloLista) {
         modeloLista.clear(); // Limpiar la lista
 

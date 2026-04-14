@@ -12,29 +12,43 @@ import java.sql.SQLException;
  * Jokalariak talde batetik bestera eskualdatzeko (traspasatzeko) eta dortsal berria 
  * esleitzeko prozesua kudeatzen duen interfaze grafikoaren klasea.
  */
-
 public class Traspaso_Y_Confirmacion {
 
-	/**
-     * Hautatze-zerrendetan (ComboBox) jokalari baten datuak era egokian gordetzeko 
-     * eta pantailan erakusteko (izena eta dortsala) erabiltzen den klase laguntzailea.
+    /**
+     * Sisteman eskuragarri dauden taldeen izenak gordetzen dituen array finkoa.
+     * Hautatze-zerrendetan (ComboBox) jatorrizko eta helburu taldeak erakusteko erabiltzen da.
      */
-	
     private static final String[] ZERRENDA_TALDEAK = {
             "Aloña Mendi", "Amezti Zarautz", "Berango Urduliz", "Irauli Bosteko", "Kukullaga", "San Adrian"
     };
 
+    /**
+     * ComboBox batean jokalari baten informazioa (NANa, izena eta dortsala)
+     * gordetzeko eta bistaratze egokia egiteko klase laguntzailea.
+     */
     private static class JugadorComboItem {
         String nana;
         String nombre;
         int dorsal;
 
+        /**
+         * JugadorComboItem objektu berri bat sortzen du.
+         *
+         * @param nana Jokalariaren NANa.
+         * @param nombre Jokalariaren izen-abizenak.
+         * @param dorsal Jokalariaren dortsala.
+         */
         public JugadorComboItem(String nana, String nombre, int dorsal) {
             this.nana = nana;
             this.nombre = nombre;
             this.dorsal = dorsal;
         }
-
+        
+        /**
+         * Jokalariaren informazioa testu moduan itzultzen du ComboBox-ean erakusteko.
+         *
+         * @return Jokalariaren izena eta dortsala.
+         */
         @Override
         public String toString() {
             return nombre + " (Dortsala: " + dorsal + ")";
@@ -179,6 +193,9 @@ public class Traspaso_Y_Confirmacion {
         return panel;
     }
     
+    /**
+     * Atzeko planoan irudi bat erakusten duen JPanel pertsonalizatua.
+     */
     static class PanelConFondo extends JPanel {
         private Image imagen;
 
@@ -188,7 +205,6 @@ public class Traspaso_Y_Confirmacion {
          * @param rutaImagen Atzeko plano gisa erabiliko den irudiaren kokalekua (ruta).
          * @param layout Panelak erabiliko duen diseinu-kudeatzailea (LayoutManager).
          */
-        
         public PanelConFondo(String rutaImagen, LayoutManager layout) {
             super(layout);
             imagen = new ImageIcon(rutaImagen).getImage();
@@ -199,7 +215,6 @@ public class Traspaso_Y_Confirmacion {
          *
          * @param g Marrazketa testuingurua ({@link Graphics}).
          */
-        
         @Override
         protected void paintComponent(Graphics g) {
             super.paintComponent(g);

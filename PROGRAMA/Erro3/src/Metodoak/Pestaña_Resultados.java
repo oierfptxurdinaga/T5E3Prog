@@ -11,25 +11,7 @@ import java.sql.ResultSet;
 /**
  * Denboraldiko emaitzak eta taldeen sailkapena erakusten dituen panela pertsonalizatua.
  * Atzeko planoko irudi bat onartzen du eta taula garden bat erabiltzen du interfaze erakargarriagoa lortzeko.
- 
- * Pestaña_Resultados klasearen eraikitzailea.
- * Atzeko planoko irudia kargatzen du eta paneleko osagaiak hasieratzen ditu.
-
-     * Panelaren marrazketa-metodoa gainidazten du, atzeko planoan irudi bat (Fondo.jpg)
-     * marrazteko panelaren dimentsio osora egokituz.
-     *
-     * @param g Marrazketa testuingurua ({@link Graphics}).
-     * 
-     * 
-     * Interfazeko elementuak (etiketak, goitibeherako zerrendak, botoiak eta taula)
-     * sortu, konfiguratu eta panelean kokatzen ditu.
-     * 
-     * Aukeratutako denboraldiaren arabera (adibidez, 2024/25), datu-baseko taula 
-     * espezifikotik (adibidez, sailkapena_24_25) sailkapeneko datuak irakurtzen ditu.
-     * Ondoren, datuak taulan bistaratzen ditu, puntuen eta gol-diferentziaren arabera ordenatuta.
-     */
-
-
+ */
 public class Pestaña_Resultados extends JPanel {
 
     private JComboBox<String> comboTemporada;
@@ -37,6 +19,10 @@ public class Pestaña_Resultados extends JPanel {
     private DefaultTableModel modelo;
     private Image imagenFondo;
 
+    /**
+     * Pestaña_Resultados klasearen eraikitzailea.
+     * Atzeko planoko irudia kargatzen du eta paneleko osagaiak hasieratzen ditu.
+     */
     public Pestaña_Resultados() {
         imagenFondo = new ImageIcon("Imagenes16K/Fondo.jpg").getImage();
         
@@ -44,6 +30,12 @@ public class Pestaña_Resultados extends JPanel {
         inicializarComponentes();
     }	
     
+    /**
+     * Panelaren marrazketa-metodoa gainidazten du, atzeko planoan irudi bat (Fondo.jpg)
+     * marrazteko panelaren dimentsio osora egokituz.
+     *
+     * @param g Marrazketa testuingurua ({@link Graphics}).
+     */
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -56,7 +48,6 @@ public class Pestaña_Resultados extends JPanel {
      * Interfazeko elementuak (etiketak, goitibeherako zerrendak, botoiak eta taula)
      * sortu, konfiguratu eta panelean kokatzen ditu.
      */
-    
     private void inicializarComponentes() {
         JLabel lblTemporada = new JLabel("Demboraldia:");
         lblTemporada.setBounds(20, 20, 100, 25);
@@ -105,7 +96,6 @@ public class Pestaña_Resultados extends JPanel {
      * espezifikotik (adibidez, sailkapena_24_25) sailkapeneko datuak irakurtzen ditu.
      * Ondoren, datuak taulan bistaratzen ditu, puntuen eta gol-diferentziaren arabera ordenatuta.
      */
-    
     private void cargarClasificacion() {
         String temporadaStr = (String) comboTemporada.getSelectedItem();
         String nombreTabla = "sailkapena_" + temporadaStr.substring(2).replace("/", "_"); 
