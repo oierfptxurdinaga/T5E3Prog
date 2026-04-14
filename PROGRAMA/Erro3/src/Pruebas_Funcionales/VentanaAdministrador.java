@@ -311,14 +311,9 @@ public class VentanaAdministrador extends JFrame {
         });
         return panel;
     }
-
-    // ==========================================
-    // 6. TRASPASO DE JUGADORES (MySQL - BASE DE DATOS)
-    // ==========================================
-  
     
     // ==========================================
-    // 7. GENERAR XML (MySQL - BASE DE DATOS) Todavia no esta hecho.
+    // 6. GENERAR XML (MySQL - BASE DE DATOS) Todavia no esta hecho.
     // ==========================================
     private JPanel crearPanelXML() {
         //JPanel panel = new JPanel();
