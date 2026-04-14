@@ -8,34 +8,61 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * Jokalariak talde batetik bestera eskualdatzeko (traspasatzeko) eta dortsal berria 
+ * esleitzeko prozesua kudeatzen duen interfaze grafikoaren klasea.
+ */
 public class Traspaso_Y_Confirmacion {
 
-    // Lista de equipos de tu base de datos
+    /**
+     * Sisteman eskuragarri dauden taldeen izenak gordetzen dituen array finkoa.
+     * Hautatze-zerrendetan (ComboBox) jatorrizko eta helburu taldeak erakusteko erabiltzen da.
+     */
     private static final String[] ZERRENDA_TALDEAK = {
             "Aloña Mendi", "Amezti Zarautz", "Berango Urduliz", "Irauli Bosteko", "Kukullaga", "San Adrian"
     };
 
-    // Clase de apoyo para guardar el jugador en el ComboBox de forma visual
+    /**
+     * ComboBox batean jokalari baten informazioa (NANa, izena eta dortsala)
+     * gordetzeko eta bistaratze egokia egiteko klase laguntzailea.
+     */
     private static class JugadorComboItem {
         String nana;
         String nombre;
         int dorsal;
 
+        /**
+         * JugadorComboItem objektu berri bat sortzen du.
+         *
+         * @param nana Jokalariaren NANa.
+         * @param nombre Jokalariaren izen-abizenak.
+         * @param dorsal Jokalariaren dortsala.
+         */
         public JugadorComboItem(String nana, String nombre, int dorsal) {
             this.nana = nana;
             this.nombre = nombre;
             this.dorsal = dorsal;
         }
-
+        
+        /**
+         * Jokalariaren informazioa testu moduan itzultzen du ComboBox-ean erakusteko.
+         *
+         * @return Jokalariaren izena eta dortsala.
+         */
         @Override
         public String toString() {
             return nombre + " (Dortsala: " + dorsal + ")";
         }
     }
 
-    // Método que genera todo el panel visual para los traspasos
+    /**
+     * Traspasoak egiteko osagai guztiak (jatorrizko taldea, jokalaria, helburu taldea, 
+     * dortsal berria eta botoia) dituen panela sortzen du. Panelean atzeko planoko irudia 
+     * duen klase pertsonalizatu bat erabiltzen da.
+     *
+     * @return Traspasoen interfaze osoa jasotzen duen {@link JPanel} objektua.
+     */
     public static JPanel crearPanelTraspaso() {
-        //JPanel panel = new JPanel(new GridLayout(6, 2, 10, 10));
     	PanelConFondo panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new GridLayout(6, 2, 10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
@@ -57,10 +84,9 @@ public class Traspaso_Y_Confirmacion {
         panel.add(txtDorsal);
 
         JButton btnTraspasar = new JButton("Traspasatu");
-        panel.add(new JLabel("")); // Espaciador visual
+        panel.add(new JLabel(""));
         panel.add(btnTraspasar);
 
-        // Listener: Cada vez que cambias de equipo origen, se cargan sus jugadores
         ActionListener cargarJugadoresAction = e -> {
             String equipoOrigen = (String) cbEquipoOrigen.getSelectedItem();
             cbJugadores.removeAllItems();
@@ -89,7 +115,6 @@ public class Traspaso_Y_Confirmacion {
 
         cbEquipoOrigen.addActionListener(cargarJugadoresAction);
 
-        // Listener: Al seleccionar un jugador, se rellena su dorsal actual en el recuadro de texto
         cbJugadores.addActionListener(e -> {
             JugadorComboItem seleccionado = (JugadorComboItem) cbJugadores.getSelectedItem();
             if (seleccionado != null) {
@@ -97,10 +122,8 @@ public class Traspaso_Y_Confirmacion {
             }
         });
 
-        // Carga inicial al iniciar la pantalla
         cargarJugadoresAction.actionPerformed(null);
 
-        // Acción de Traspasar
         btnTraspasar.addActionListener(e -> {
             JugadorComboItem jokalaria = (JugadorComboItem) cbJugadores.getSelectedItem();
             String equipoDestino = (String) cbEquipoDestino.getSelectedItem();
@@ -128,7 +151,6 @@ public class Traspaso_Y_Confirmacion {
             try (Connection conn = Konexioa.getKonexioa()) {
                 if (conn == null) return;
 
-                // 1. Comprobar si el nuevo dorsal ya está ocupado en el equipo destino
                 String checkSql = "SELECT count(*) FROM jokalaria WHERE taldea = ? AND Dortsala = ?";
                 PreparedStatement checkStmt = conn.prepareStatement(checkSql);
                 checkStmt.setString(1, equipoDestino);
@@ -140,7 +162,6 @@ public class Traspaso_Y_Confirmacion {
                     return;
                 }
 
-                // 2. Actualizar el jugador en la tabla jokalaria
                 String updateSql = "UPDATE jokalaria SET taldea = ?, Dortsala = ? WHERE NANa = ?";
                 PreparedStatement updateStmt = conn.prepareStatement(updateSql);
                 updateStmt.setString(1, equipoDestino);
@@ -149,7 +170,6 @@ public class Traspaso_Y_Confirmacion {
 
                 int filas = updateStmt.executeUpdate();
                 if (filas > 0) {
-                    // 3. Opcional: Actualizar también en la tabla 'pertsona' por precaución de datos huérfanos
                     try {
                          String updatePertsona = "UPDATE pertsona SET taldea = ? WHERE NANa = ?";
                          PreparedStatement pstmtP = conn.prepareStatement(updatePertsona);
@@ -157,11 +177,9 @@ public class Traspaso_Y_Confirmacion {
                          pstmtP.setString(2, jokalaria.nana);
                          pstmtP.executeUpdate();
                     } catch (SQLException ignore) { 
-                        // Ignoramos si la tabla pertsona no tuviera la columna de manera estricta
                     }
 
                     JOptionPane.showMessageDialog(panel, "Traspasoa behar bezala burutu da!");
-                    // Recargar la lista de jugadores automáticamente para refrescar
                     cargarJugadoresAction.actionPerformed(null);
                 } else {
                     JOptionPane.showMessageDialog(panel, "Ez da jokalaria aurkitu datu-basean.");
@@ -175,15 +193,28 @@ public class Traspaso_Y_Confirmacion {
         return panel;
     }
     
- // --- CLASE INTERNA PARA EL FONDO ---
+    /**
+     * Atzeko planoan irudi bat erakusten duen JPanel pertsonalizatua.
+     */
     static class PanelConFondo extends JPanel {
         private Image imagen;
 
+        /**
+         * PanelConFondo klasearen eraikitzailea.
+         *
+         * @param rutaImagen Atzeko plano gisa erabiliko den irudiaren kokalekua (ruta).
+         * @param layout Panelak erabiliko duen diseinu-kudeatzailea (LayoutManager).
+         */
         public PanelConFondo(String rutaImagen, LayoutManager layout) {
             super(layout);
             imagen = new ImageIcon(rutaImagen).getImage();
         }
 
+        /**
+         * Metodo hau gainidatziz atzeko irudia marrazten da panelaren tamaina osora egokituz.
+         *
+         * @param g Marrazketa testuingurua ({@link Graphics}).
+         */
         @Override
         protected void paintComponent(Graphics g) {
             super.paintComponent(g);

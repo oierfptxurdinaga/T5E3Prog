@@ -7,40 +7,40 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+/**
+ * Entrenatzaileen informazioa eta bakoitzari dagokion taldeko jokalariak 
+ * bistaratzen dituen interfaze grafikoaren (GUI) panela kudeatzen duen klasea.
+ */
 public class Panel_Pestaña_Entrenadores {
 
-    // =======================
-    // PESTAÑA INFO ENTRENATZAILEAK
-    // =======================
+	/**
+     * Entrenatzaileen ikuspegia osatzen duen panela (JPanel) sortzen du.
+     * Bertan entrenatzaileen datuak jasotzen dituen taula bat eta, talde bat hautatzean, 
+     * jokalariak bistaratzen dituen zerrenda bat integratzen dira.
+     *
+     * @return Eraikitako eta osagaiz betetako {@link JPanel} objektua.
+     */
     public static JPanel crearPanelDeLosEntrenadores() {
         JPanel panel = new JPanel(new BorderLayout(10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
-        // =====================
-        // TAULA ETA MODELOA
-        // =====================
         String[] columnas = { "Taldea", "Izen-Abizenak", "Titulazioa" };
         DefaultTableModel modelo = new DefaultTableModel(columnas, 0) {
             @Override
             public boolean isCellEditable(int row, int column) { return false; }
         };
 
-        // Cargar los datos desde MySQL
         cargarEntrenadoresDesdeBD(modelo);
 
         JTable tabla = new JTable(modelo);
         JScrollPane scrollTabla = new JScrollPane(tabla);
         
-        // =====================
-        // JOKALARIEN LISTA (eskuman)
-        // =====================
         DefaultListModel<String> modeloLista = new DefaultListModel<>();
         JList<String> listaTaldea = new JList<>(modeloLista);
         JScrollPane scrollLista = new JScrollPane(listaTaldea);
         scrollLista.setPreferredSize(new Dimension(260, 0));
         scrollLista.setBorder(BorderFactory.createTitledBorder("Taldeko Jokalariak"));
 
-        // Evento para ver los jugadores del equipo al hacer clic en el entrenador
         tabla.getSelectionModel().addListSelectionListener(e -> {
             if (!e.getValueIsAdjusting()) {
                 int fila = tabla.getSelectedRow();
@@ -58,11 +58,14 @@ public class Panel_Pestaña_Entrenadores {
         return panel;
     }
 
-    // ==========================================
-    // MÉTODO: ENTRENATZAILEAK KONTZULTATU 
-    // ==========================================
+    /**
+     * Datu-basetik entrenatzaileen datuak kontsultatzen ditu (taldea, izen-abizenak 
+     * eta titulazioa) eta taularen modeloan (DefaultTableModel) kargatzen ditu.
+     *
+     * @param modelo Datuak bistaratzeko erabiliko den taularen eredua ({@link DefaultTableModel}).
+     */
     private static void cargarEntrenadoresDesdeBD(DefaultTableModel modelo) {
-        modelo.setRowCount(0); // Limpiar tabla antes de rellenar
+        modelo.setRowCount(0);
 
         Connection conn = Konexioa.getKonexioa();
         if (conn == null) return;
@@ -85,10 +88,14 @@ public class Panel_Pestaña_Entrenadores {
             JOptionPane.showMessageDialog(null, "Errorea entrenatzaileak kargatzean: " + ex.getMessage());
         }
     }
-
-    // ==========================================
-    // MÉTODO: JOKALARIEN KONTZULTA KOTZULTATU LISTA BATEAN
-    // ==========================================
+    
+    /**
+     * Emandako talde baten jokalariak datu-basetik kontsultatzen ditu (dortsala eta 
+     * izen-abizenak) eta zerrendaren modeloan kargatzen ditu.
+     *
+     * @param taldea Kontsultatu nahi den taldearen izena.
+     * @param modeloLista Jokalariak bistaratuko diren zerrendaren eredua ({@link DefaultListModel}).
+     */
     private static void cargarJugadoresDelEquipo(String taldea, DefaultListModel<String> modeloLista) {
         modeloLista.clear(); // Limpiar la lista
 
