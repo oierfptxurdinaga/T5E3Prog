@@ -39,7 +39,7 @@ public class VentanaArbitro extends JFrame {
 
     public VentanaArbitro() {
         setTitle("Panel del Arbitro");
-        setIconImage(new ImageIcon("Imagenes16K/LOGONarb.png").getImage());
+        setIconImage(new ImageIcon("Imagenes16K/EMPRESA-LOGOA/LOGONarb.png").getImage());
         setSize(800, 500); 
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -97,7 +97,7 @@ public class VentanaArbitro extends JFrame {
     private JPanel crearPanelPrincipal() {
         //JPanel panel = new JPanel(null);
         //panel.setBackground(Color.WHITE);
-    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", null);
+    	JPanel panel = new PanelConFondo("Imagenes16K/TEXTURES/Fondo.jpg", null);
 
         // ------------------ FILA 1: Denboraldia y Jardunaldia ------------------
         JLabel lblTemporada = new JLabel("Denboraldia:");
@@ -299,7 +299,7 @@ public class VentanaArbitro extends JFrame {
 
 private JPanel crearPanelXMLArb() {
     //JPanel panel = new JPanel();
-	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", null);
+	JPanel panel = new PanelConFondo("Imagenes16K/TEXTURES/Fondo.jpg", null);
 
     JButton btnExportar = new JButton("Datuak XML-ra Esportatu");
     btnExportar.setBounds(204, 30, 147, 21);

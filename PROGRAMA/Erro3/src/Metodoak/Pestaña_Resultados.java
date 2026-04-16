@@ -24,7 +24,7 @@ public class Pestaña_Resultados extends JPanel {
      * Atzeko planoko irudia kargatzen du eta paneleko osagaiak hasieratzen ditu.
      */
     public Pestaña_Resultados() {
-        imagenFondo = new ImageIcon("Imagenes16K/Fondo.jpg").getImage();
+        imagenFondo = new ImageIcon("Imagenes16K/TEXTURES/Fondo.jpg").getImage();
         
         setLayout(null);
         inicializarComponentes();

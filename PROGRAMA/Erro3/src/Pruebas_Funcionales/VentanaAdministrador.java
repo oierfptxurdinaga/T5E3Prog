@@ -40,7 +40,7 @@ public class VentanaAdministrador extends JFrame {
 
     public VentanaAdministrador() {
         setTitle("Panel de Administrador");
-        setIconImage(new ImageIcon("Imagenes16K/LOGONadm.png").getImage());
+        setIconImage(new ImageIcon("Imagenes16K/EMPRESA-LOGOAK/LOGONadm.png").getImage());
         setSize(920, 575);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -72,7 +72,7 @@ public class VentanaAdministrador extends JFrame {
     // ==========================================
     private JPanel crearPanelUsuarios() {
         //JPanel panel = new JPanel(new BorderLayout());
-    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new BorderLayout());
+    	JPanel panel = new PanelConFondo("Imagenes16K/TEXTURES/Fondo.jpg", new BorderLayout());
         areaUsuarios = new JTextArea();
         areaUsuarios.setEditable(false);
         panel.add(new JScrollPane(areaUsuarios), BorderLayout.CENTER);
@@ -109,7 +109,7 @@ public class VentanaAdministrador extends JFrame {
     // ==========================================
     private JPanel crearPanelCrearUsuario() {
         //JPanel panel = new JPanel(new GridLayout(6, 2, 10, 10));
-    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new GridLayout(6, 2, 10, 10));
+    	JPanel panel = new PanelConFondo("Imagenes16K/TEXTURES/Fondo.jpg", new GridLayout(6, 2, 10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
         JTextField txtIzena = new JTextField();
@@ -150,7 +150,7 @@ public class VentanaAdministrador extends JFrame {
     // ==========================================
     private JPanel crearPanelEliminarUsuario() {
         //JPanel panel = new JPanel();
-    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new FlowLayout());
+    	JPanel panel = new PanelConFondo("Imagenes16K/TEXTURES/Fondo.jpg", new FlowLayout());
         panel.add(new JLabel("Erabiltzailea ezabatzeko (Erabiltzaile-izena):"));
         JTextField txtUsuarioEliminar = new JTextField(15);
         panel.add(txtUsuarioEliminar);
@@ -193,7 +193,7 @@ public class VentanaAdministrador extends JFrame {
     // ==========================================
     private JPanel crearPanelCrearJugador() {
         //JPanel panel = new JPanel(new GridLayout(7, 2, 10, 10));
-    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new GridLayout(7, 2, 10, 10));
+    	JPanel panel = new PanelConFondo("Imagenes16K/TEXTURES/Fondo.jpg", new GridLayout(7, 2, 10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
         JTextField txtNombre = new JTextField();
@@ -267,7 +267,7 @@ public class VentanaAdministrador extends JFrame {
     // ==========================================
     private JPanel crearPanelEliminarJugador() {
         //JPanel panel = new JPanel();
-    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new FlowLayout());
+    	JPanel panel = new PanelConFondo("Imagenes16K/TEXTURES/Fondo.jpg", new FlowLayout());
         panel.add(new JLabel("Jokalariaren NAN-a ezabatzeko:"));
         JTextField txtNanaJugador = new JTextField(10); 
         panel.add(txtNanaJugador);
@@ -317,7 +317,7 @@ public class VentanaAdministrador extends JFrame {
     // ==========================================
     private JPanel crearPanelXML() {
         //JPanel panel = new JPanel();
-    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", null);
+    	JPanel panel = new PanelConFondo("Imagenes16K/TEXTURES/Fondo.jpg", null);
         panel.setLayout(new FlowLayout(FlowLayout.CENTER, 30, 30));
 
         JButton btnExportar = new JButton("Datuak XML-ra Esportatu");

@@ -1,0 +1,2482 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<EskubaloiDatuak>
+    <Pertsonak>
+        <Pertsona>
+            <NANa>10000001A</NANa>
+            <Izen_abizena>Iker Zubizarreta Lasa</Izen_abizena>
+            <Adina>22</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000001</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>10000002B</NANa>
+            <Izen_abizena>Aimar Etxeberria Agirre</Izen_abizena>
+            <Adina>25</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000002</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>10000003C</NANa>
+            <Izen_abizena>Hegoi Mendizabal Beloki</Izen_abizena>
+            <Adina>19</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000003</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>10000004D</NANa>
+            <Izen_abizena>Jon Ander Garcia</Izen_abizena>
+            <Adina>28</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000004</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>10000005E</NANa>
+            <Izen_abizena>Unai Ituarte Otegi</Izen_abizena>
+            <Adina>21</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000005</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>10000006F</NANa>
+            <Izen_abizena>Beñat Txurruka Arregi</Izen_abizena>
+            <Adina>24</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000006</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>10000007G</NANa>
+            <Izen_abizena>Gorka Elorza Mujika</Izen_abizena>
+            <Adina>30</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000007</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>10000008H</NANa>
+            <Izen_abizena>Oihan Zabaleta Altuna</Izen_abizena>
+            <Adina>18</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000008</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>10000009I</NANa>
+            <Izen_abizena>Julen Madariaga Iturraspe</Izen_abizena>
+            <Adina>23</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000009</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>10000010J</NANa>
+            <Izen_abizena>Eneko Azkue Odriozola</Izen_abizena>
+            <Adina>26</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000010</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>10000011K</NANa>
+            <Izen_abizena>Xabier Garmendia Urkiola</Izen_abizena>
+            <Adina>20</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000011</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>10000012L</NANa>
+            <Izen_abizena>Adur Goikoetxea Laka</Izen_abizena>
+            <Adina>22</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000012</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>10000013M</NANa>
+            <Izen_abizena>Luken Basurto Elguezabal</Izen_abizena>
+            <Adina>27</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000013</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>10000014N</NANa>
+            <Izen_abizena>Kerman Uriarte Basterretxea</Izen_abizena>
+            <Adina>31</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>600000014</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>11560203N</NANa>
+            <Izen_abizena>AA</Izen_abizena>
+            <Adina/>
+            <Helbidea/>
+            <Tlfn/>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000001A</NANa>
+            <Izen_abizena>Mikel Zabala Larrea</Izen_abizena>
+            <Adina>24</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000015</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000002B</NANa>
+            <Izen_abizena>Egoitz Murua Alberdi</Izen_abizena>
+            <Adina>21</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000016</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000003C</NANa>
+            <Izen_abizena>Aitor Gorospe Isasi</Izen_abizena>
+            <Adina>26</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000017</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000004D</NANa>
+            <Izen_abizena>Arkaitz Bengoetxea</Izen_abizena>
+            <Adina>32</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000018</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000005E</NANa>
+            <Izen_abizena>Izan Olabarria Gomez</Izen_abizena>
+            <Adina>19</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000019</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000006F</NANa>
+            <Izen_abizena>Eneko Basterra Zuazo</Izen_abizena>
+            <Adina>23</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000020</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000007G</NANa>
+            <Izen_abizena>Zunbeltz Idigoras</Izen_abizena>
+            <Adina>20</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000021</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000008H</NANa>
+            <Izen_abizena>Gaizka Urrutia San Pedro</Izen_abizena>
+            <Adina>28</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000022</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000009I</NANa>
+            <Izen_abizena>Telmo Aranburu Etxadi</Izen_abizena>
+            <Adina>25</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000023</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000010J</NANa>
+            <Izen_abizena>Aner Villalabeitia</Izen_abizena>
+            <Adina>18</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000024</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000011K</NANa>
+            <Izen_abizena>Iker Salaberria Lertxundi</Izen_abizena>
+            <Adina>22</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000025</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000012L</NANa>
+            <Izen_abizena>Galder Ugarte Loiola</Izen_abizena>
+            <Adina>29</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000026</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000013M</NANa>
+            <Izen_abizena>Joanes Atxa Mendia</Izen_abizena>
+            <Adina>27</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000027</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>20000014N</NANa>
+            <Izen_abizena>Oier Urreizti Aldalur</Izen_abizena>
+            <Adina>23</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>600000028</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000001A</NANa>
+            <Izen_abizena>Josu Elorza Gabilondo</Izen_abizena>
+            <Adina>26</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000029</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000002B</NANa>
+            <Izen_abizena>Imanol Mujika Otaegi</Izen_abizena>
+            <Adina>21</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000030</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000003C</NANa>
+            <Izen_abizena>Markel Olano Gabiria</Izen_abizena>
+            <Adina>24</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000031</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000004D</NANa>
+            <Izen_abizena>Andoni Larrañaga</Izen_abizena>
+            <Adina>30</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000032</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000005E</NANa>
+            <Izen_abizena>Hodei Urretabizkaia</Izen_abizena>
+            <Adina>22</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000033</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000006F</NANa>
+            <Izen_abizena>Aiur Egiguren Lasa</Izen_abizena>
+            <Adina>19</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000034</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000007G</NANa>
+            <Izen_abizena>Ganix Zulaika Berasategi</Izen_abizena>
+            <Adina>28</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000035</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000008H</NANa>
+            <Izen_abizena>Ibai Arrieta Uranga</Izen_abizena>
+            <Adina>25</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000036</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000009I</NANa>
+            <Izen_abizena>Eñaut Agirrebeitia</Izen_abizena>
+            <Adina>20</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000037</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000010J</NANa>
+            <Izen_abizena>Mattin Etxadi Izagirre</Izen_abizena>
+            <Adina>23</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000038</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000011K</NANa>
+            <Izen_abizena>Aritz Bergara Ormazabal</Izen_abizena>
+            <Adina>27</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000039</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000012L</NANa>
+            <Izen_abizena>Jokin Aperribay</Izen_abizena>
+            <Adina>33</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000040</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000013M</NANa>
+            <Izen_abizena>Enekoitz Azkarate</Izen_abizena>
+            <Adina>18</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000041</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>30000014N</NANa>
+            <Izen_abizena>Ugaitz Telleria Artola</Izen_abizena>
+            <Adina>22</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>600000042</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000001A</NANa>
+            <Izen_abizena>Julen Ormaetxea Bilbao</Izen_abizena>
+            <Adina>21</Adina>
+            <Helbidea>Berango</Helbidea>
+            <Tlfn>600000043</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000002B</NANa>
+            <Izen_abizena>Iker Iturraspe Goiria</Izen_abizena>
+            <Adina>24</Adina>
+            <Helbidea>Urduliz</Helbidea>
+            <Tlfn>600000044</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000003C</NANa>
+            <Izen_abizena>Endika Basabe Arana</Izen_abizena>
+            <Adina>29</Adina>
+            <Helbidea>Berango</Helbidea>
+            <Tlfn>600000045</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000004D</NANa>
+            <Izen_abizena>Asier Urrutikoetxea</Izen_abizena>
+            <Adina>23</Adina>
+            <Helbidea>Urduliz</Helbidea>
+            <Tlfn>600000046</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000005E</NANa>
+            <Izen_abizena>Jon Magunagoitia</Izen_abizena>
+            <Adina>20</Adina>
+            <Helbidea>Berango</Helbidea>
+            <Tlfn>600000047</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000006F</NANa>
+            <Izen_abizena>Gotzon Gorrotxategi</Izen_abizena>
+            <Adina>26</Adina>
+            <Helbidea>Urduliz</Helbidea>
+            <Tlfn>600000048</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000007G</NANa>
+            <Izen_abizena>Ekhi Zabalondo Txertudi</Izen_abizena>
+            <Adina>18</Adina>
+            <Helbidea>Berango</Helbidea>
+            <Tlfn>600000049</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000008H</NANa>
+            <Izen_abizena>Peru Agirrezabala</Izen_abizena>
+            <Adina>22</Adina>
+            <Helbidea>Urduliz</Helbidea>
+            <Tlfn>600000050</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000009I</NANa>
+            <Izen_abizena>Kepa Amuriza Zarate</Izen_abizena>
+            <Adina>30</Adina>
+            <Helbidea>Berango</Helbidea>
+            <Tlfn>600000051</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000010J</NANa>
+            <Izen_abizena>Aitor Atutxa Goti</Izen_abizena>
+            <Adina>25</Adina>
+            <Helbidea>Urduliz</Helbidea>
+            <Tlfn>600000052</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000011K</NANa>
+            <Izen_abizena>Lander Barrenetxea</Izen_abizena>
+            <Adina>28</Adina>
+            <Helbidea>Berango</Helbidea>
+            <Tlfn>600000053</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000012L</NANa>
+            <Izen_abizena>Bittor Egurrola</Izen_abizena>
+            <Adina>21</Adina>
+            <Helbidea>Urduliz</Helbidea>
+            <Tlfn>600000054</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000013M</NANa>
+            <Izen_abizena>Erlantz Gabantxo</Izen_abizena>
+            <Adina>19</Adina>
+            <Helbidea>Berango</Helbidea>
+            <Tlfn>600000055</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>40000014N</NANa>
+            <Izen_abizena>Jagoba Gurtubay</Izen_abizena>
+            <Adina>27</Adina>
+            <Helbidea>Urduliz</Helbidea>
+            <Tlfn>600000056</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000001A</NANa>
+            <Izen_abizena>Josian Barrenetxea Uriarte</Izen_abizena>
+            <Adina>26</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000057</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000002B</NANa>
+            <Izen_abizena>Beñat Arrasate Igartua</Izen_abizena>
+            <Adina>23</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000058</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000003C</NANa>
+            <Izen_abizena>Iker Casillas Vazquez</Izen_abizena>
+            <Adina>22</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000059</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000004D</NANa>
+            <Izen_abizena>Andoni Zumalde Guridi</Izen_abizena>
+            <Adina>20</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000060</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000005E</NANa>
+            <Izen_abizena>Mikel Biain Biain</Izen_abizena>
+            <Adina>29</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000061</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000006F</NANa>
+            <Izen_abizena>Julen Murguzur</Izen_abizena>
+            <Adina>19</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000062</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000007G</NANa>
+            <Izen_abizena>Xabier Markuleta</Izen_abizena>
+            <Adina>31</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000063</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000008H</NANa>
+            <Izen_abizena>Aitor Idigoras</Izen_abizena>
+            <Adina>24</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000064</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000009I</NANa>
+            <Izen_abizena>Jon Altuna Ibarluzea</Izen_abizena>
+            <Adina>27</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000065</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000010J</NANa>
+            <Izen_abizena>Gorka Umerez Arregi</Izen_abizena>
+            <Adina>21</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000066</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000011K</NANa>
+            <Izen_abizena>Eñaut Agirre Guridi</Izen_abizena>
+            <Adina>25</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000067</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000012L</NANa>
+            <Izen_abizena>Manex Zubia Otaegi</Izen_abizena>
+            <Adina>22</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000068</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000013M</NANa>
+            <Izen_abizena>Eneko Arriolabengoa</Izen_abizena>
+            <Adina>18</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000069</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>50000014N</NANa>
+            <Izen_abizena>Josu Arregi Mendi</Izen_abizena>
+            <Adina>32</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>600000070</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000001A</NANa>
+            <Izen_abizena>Xabier Azkue Olaizola</Izen_abizena>
+            <Adina>19</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000071</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000002B</NANa>
+            <Izen_abizena>Enaut Agirre Eizagirre</Izen_abizena>
+            <Adina>22</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000072</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000003C</NANa>
+            <Izen_abizena>Oihan Etxabe Ostolaza</Izen_abizena>
+            <Adina>24</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000073</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000004D</NANa>
+            <Izen_abizena>Markel Berasategi</Izen_abizena>
+            <Adina>20</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000074</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000005E</NANa>
+            <Izen_abizena>Hodei Iruretagoiena</Izen_abizena>
+            <Adina>21</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000075</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000006F</NANa>
+            <Izen_abizena>Ibai Agirrezabalaga</Izen_abizena>
+            <Adina>28</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000076</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000007G</NANa>
+            <Izen_abizena>Aitor Zubia Irigoien</Izen_abizena>
+            <Adina>25</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000077</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000008H</NANa>
+            <Izen_abizena>Julen Odriozola Arana</Izen_abizena>
+            <Adina>23</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000078</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000009I</NANa>
+            <Izen_abizena>Luken Illarramendi</Izen_abizena>
+            <Adina>30</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000079</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000010J</NANa>
+            <Izen_abizena>Haritz Elustondo</Izen_abizena>
+            <Adina>18</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000080</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000011K</NANa>
+            <Izen_abizena>Eneko Alkorta Olaiz</Izen_abizena>
+            <Adina>27</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000081</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000012L</NANa>
+            <Izen_abizena>Jon Ander Agirre</Izen_abizena>
+            <Adina>22</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000082</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000013M</NANa>
+            <Izen_abizena>Ander Esnal Larrañaga</Izen_abizena>
+            <Adina>26</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000083</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60000014N</NANa>
+            <Izen_abizena>Telmo Basterra Odriozola</Izen_abizena>
+            <Adina>31</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>600000084</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>60718444P</NANa>
+            <Izen_abizena>AA</Izen_abizena>
+            <Adina/>
+            <Helbidea/>
+            <Tlfn/>
+            <taldea>Kukullaga</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>70000001A</NANa>
+            <Izen_abizena>Gorka Etxeberria Lasa</Izen_abizena>
+            <Adina>45</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>611000111</Tlfn>
+            <taldea>San Adrian</taldea>
+            <Rola>Entrenatzailea</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>70000002B</NANa>
+            <Izen_abizena>Mikel Ituarte Mendizabal</Izen_abizena>
+            <Adina>38</Adina>
+            <Helbidea>Etxebarri</Helbidea>
+            <Tlfn>611000222</Tlfn>
+            <taldea>Kukullaga</taldea>
+            <Rola>Entrenatzailea</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>70000003C</NANa>
+            <Izen_abizena>Amaia Agirreurreta Elorza</Izen_abizena>
+            <Adina>40</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>611000333</Tlfn>
+            <taldea>Irauli Bosteko</taldea>
+            <Rola>Entrenatzailea</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>70000004D</NANa>
+            <Izen_abizena>Bittor Arana Goiri</Izen_abizena>
+            <Adina>52</Adina>
+            <Helbidea>Berango</Helbidea>
+            <Tlfn>611000444</Tlfn>
+            <taldea>Berango Urduliz</taldea>
+            <Rola>Entrenatzailea</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>70000005E</NANa>
+            <Izen_abizena>Iñaki Ugarteburu Artola</Izen_abizena>
+            <Adina>41</Adina>
+            <Helbidea>Oñati</Helbidea>
+            <Tlfn>611000555</Tlfn>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Entrenatzailea</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>70000006F</NANa>
+            <Izen_abizena>Maite Azkue Olaizola</Izen_abizena>
+            <Adina>36</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>611000666</Tlfn>
+            <taldea>Amezti Zarautz</taldea>
+            <Rola>Entrenatzailea</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>80000001A</NANa>
+            <Izen_abizena>Jon Urkidi Artetxe</Izen_abizena>
+            <Adina>35</Adina>
+            <Helbidea>Bilbo</Helbidea>
+            <Tlfn>622000111</Tlfn>
+            <taldea/>
+            <Rola>Epailea</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>80000002B</NANa>
+            <Izen_abizena>Ane Mendizabal Goti</Izen_abizena>
+            <Adina>29</Adina>
+            <Helbidea>Gasteiz</Helbidea>
+            <Tlfn>622000222</Tlfn>
+            <taldea/>
+            <Rola>Epailea</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>80000003C</NANa>
+            <Izen_abizena>Kepa Arrate Zubia</Izen_abizena>
+            <Adina>42</Adina>
+            <Helbidea>Donostia</Helbidea>
+            <Tlfn>622000333</Tlfn>
+            <taldea/>
+            <Rola>Epailea</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>80000004D</NANa>
+            <Izen_abizena>Maider Elorriaga Laka</Izen_abizena>
+            <Adina>31</Adina>
+            <Helbidea>Eibar</Helbidea>
+            <Tlfn>622000444</Tlfn>
+            <taldea/>
+            <Rola>Epailea</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>80000005E</NANa>
+            <Izen_abizena>Unai Goikoetxea Lasa</Izen_abizena>
+            <Adina>38</Adina>
+            <Helbidea>Zarautz</Helbidea>
+            <Tlfn>622000555</Tlfn>
+            <taldea/>
+            <Rola>Epailea</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>80000006F</NANa>
+            <Izen_abizena>Itziar Agirre Beloki</Izen_abizena>
+            <Adina>27</Adina>
+            <Helbidea>Irun</Helbidea>
+            <Tlfn>622000666</Tlfn>
+            <taldea/>
+            <Rola>Epailea</Rola>
+        </Pertsona>
+        <Pertsona>
+            <NANa>85262598B</NANa>
+            <Izen_abizena>AA</Izen_abizena>
+            <Adina/>
+            <Helbidea/>
+            <Tlfn/>
+            <taldea>Aloña Mendi</taldea>
+            <Rola>Jokalaria</Rola>
+        </Pertsona>
+    </Pertsonak>
+    <Jokalariak>
+        <Jokalaria>
+            <NANa>10000001A</NANa>
+            <Izen_abizena>Iker Zubizarreta Lasa</Izen_abizena>
+            <Dortsala>1</Dortsala>
+            <Posizioa>Atezaina</Posizioa>
+            <Jaiotze_data>2004-05-12</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>10000002B</NANa>
+            <Izen_abizena>Aimar Etxeberria Agirre</Izen_abizena>
+            <Dortsala>10</Dortsala>
+            <Posizioa>Pibotea</Posizioa>
+            <Jaiotze_data>2001-11-20</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>10000003C</NANa>
+            <Izen_abizena>Hegoi Mendizabal Beloki</Izen_abizena>
+            <Dortsala>7</Dortsala>
+            <Posizioa>Ezkerraldeko hegala</Posizioa>
+            <Jaiotze_data>2007-03-15</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>10000004D</NANa>
+            <Izen_abizena>Jon Ander Garcia</Izen_abizena>
+            <Dortsala>22</Dortsala>
+            <Posizioa>Eskuineko laterala</Posizioa>
+            <Jaiotze_data>1998-08-10</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>10000005E</NANa>
+            <Izen_abizena>Unai Ituarte Otegi</Izen_abizena>
+            <Dortsala>5</Dortsala>
+            <Posizioa>Zentrala</Posizioa>
+            <Jaiotze_data>2005-01-25</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>10000006F</NANa>
+            <Izen_abizena>Beñat Txurruka Arregi</Izen_abizena>
+            <Dortsala>13</Dortsala>
+            <Posizioa>Ezkerraldeko laterala</Posizioa>
+            <Jaiotze_data>2002-06-30</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>10000007G</NANa>
+            <Izen_abizena>Gorka Elorza Mujika</Izen_abizena>
+            <Dortsala>9</Dortsala>
+            <Posizioa>Pibotea</Posizioa>
+            <Jaiotze_data>1996-09-05</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>10000008H</NANa>
+            <Izen_abizena>Oihan Zabaleta Altuna</Izen_abizena>
+            <Dortsala>12</Dortsala>
+            <Posizioa>Atezaina</Posizioa>
+            <Jaiotze_data>2008-02-14</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>10000009I</NANa>
+            <Izen_abizena>Julen Madariaga Iturraspe</Izen_abizena>
+            <Dortsala>11</Dortsala>
+            <Posizioa>Eskuineko hegala</Posizioa>
+            <Jaiotze_data>2003-10-01</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>10000010J</NANa>
+            <Izen_abizena>Eneko Azkue Odriozola</Izen_abizena>
+            <Dortsala>4</Dortsala>
+            <Posizioa>Ezkerraldeko hegala</Posizioa>
+            <Jaiotze_data>2000-12-12</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>10000011K</NANa>
+            <Izen_abizena>Xabier Garmendia Urkiola</Izen_abizena>
+            <Dortsala>15</Dortsala>
+            <Posizioa>Eskuineko laterala</Posizioa>
+            <Jaiotze_data>2006-04-22</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>10000012L</NANa>
+            <Izen_abizena>Adur Goikoetxea Laka</Izen_abizena>
+            <Dortsala>8</Dortsala>
+            <Posizioa>Zentrala</Posizioa>
+            <Jaiotze_data>2004-07-18</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>10000013M</NANa>
+            <Izen_abizena>Luken Basurto Elguezabal</Izen_abizena>
+            <Dortsala>2</Dortsala>
+            <Posizioa>Ezkerraldeko laterala</Posizioa>
+            <Jaiotze_data>1999-03-10</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>10000014N</NANa>
+            <Izen_abizena>Kerman Uriarte Basterretxea</Izen_abizena>
+            <Dortsala>18</Dortsala>
+            <Posizioa>Eskuineko hegala</Posizioa>
+            <Jaiotze_data>1995-05-25</Jaiotze_data>
+            <taldea>San Adrian</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000001A</NANa>
+            <Izen_abizena>Mikel Zabala Larrea</Izen_abizena>
+            <Dortsala>1</Dortsala>
+            <Posizioa>Atezaina</Posizioa>
+            <Jaiotze_data>2002-02-10</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000002B</NANa>
+            <Izen_abizena>Egoitz Murua Alberdi</Izen_abizena>
+            <Dortsala>10</Dortsala>
+            <Posizioa>Pibotea</Posizioa>
+            <Jaiotze_data>2005-04-14</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000003C</NANa>
+            <Izen_abizena>Aitor Gorospe Isasi</Izen_abizena>
+            <Dortsala>5</Dortsala>
+            <Posizioa>Zentrala</Posizioa>
+            <Jaiotze_data>2000-08-22</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000004D</NANa>
+            <Izen_abizena>Arkaitz Bengoetxea</Izen_abizena>
+            <Dortsala>8</Dortsala>
+            <Posizioa>Ezkerraldeko laterala</Posizioa>
+            <Jaiotze_data>1994-01-30</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000005E</NANa>
+            <Izen_abizena>Izan Olabarria Gomez</Izen_abizena>
+            <Dortsala>13</Dortsala>
+            <Posizioa>Eskuineko hegala</Posizioa>
+            <Jaiotze_data>2007-11-05</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000006F</NANa>
+            <Izen_abizena>Eneko Basterra Zuazo</Izen_abizena>
+            <Dortsala>7</Dortsala>
+            <Posizioa>Ezkerraldeko hegala</Posizioa>
+            <Jaiotze_data>2003-09-12</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000007G</NANa>
+            <Izen_abizena>Zunbeltz Idigoras</Izen_abizena>
+            <Dortsala>3</Dortsala>
+            <Posizioa>Zentrala</Posizioa>
+            <Jaiotze_data>2006-05-18</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000008H</NANa>
+            <Izen_abizena>Gaizka Urrutia San Pedro</Izen_abizena>
+            <Dortsala>16</Dortsala>
+            <Posizioa>Atezaina</Posizioa>
+            <Jaiotze_data>1998-03-25</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000009I</NANa>
+            <Izen_abizena>Telmo Aranburu Etxadi</Izen_abizena>
+            <Dortsala>9</Dortsala>
+            <Posizioa>Pibotea</Posizioa>
+            <Jaiotze_data>2001-07-07</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000010J</NANa>
+            <Izen_abizena>Aner Villalabeitia</Izen_abizena>
+            <Dortsala>11</Dortsala>
+            <Posizioa>Eskuineko laterala</Posizioa>
+            <Jaiotze_data>2008-10-14</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000011K</NANa>
+            <Izen_abizena>Iker Salaberria Lertxundi</Izen_abizena>
+            <Dortsala>2</Dortsala>
+            <Posizioa>Ezkerraldeko laterala</Posizioa>
+            <Jaiotze_data>2004-12-01</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000012L</NANa>
+            <Izen_abizena>Galder Ugarte Loiola</Izen_abizena>
+            <Dortsala>14</Dortsala>
+            <Posizioa>Eskuineko hegala</Posizioa>
+            <Jaiotze_data>1997-02-28</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000013M</NANa>
+            <Izen_abizena>Joanes Atxa Mendia</Izen_abizena>
+            <Dortsala>21</Dortsala>
+            <Posizioa>Eskuineko laterala</Posizioa>
+            <Jaiotze_data>1999-06-15</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>20000014N</NANa>
+            <Izen_abizena>Oier Urreizti Aldalur</Izen_abizena>
+            <Dortsala>4</Dortsala>
+            <Posizioa>Ezkerraldeko hegala</Posizioa>
+            <Jaiotze_data>2003-01-20</Jaiotze_data>
+            <taldea>Kukullaga</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000001A</NANa>
+            <Izen_abizena>Josu Elorza Gabilondo</Izen_abizena>
+            <Dortsala>1</Dortsala>
+            <Posizioa>Atezaina</Posizioa>
+            <Jaiotze_data>1999-04-12</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000002B</NANa>
+            <Izen_abizena>Imanol Mujika Otaegi</Izen_abizena>
+            <Dortsala>8</Dortsala>
+            <Posizioa>Zentrala</Posizioa>
+            <Jaiotze_data>2005-02-28</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000003C</NANa>
+            <Izen_abizena>Markel Olano Gabiria</Izen_abizena>
+            <Dortsala>10</Dortsala>
+            <Posizioa>Pibotea</Posizioa>
+            <Jaiotze_data>2002-11-15</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000004D</NANa>
+            <Izen_abizena>Andoni Larrañaga</Izen_abizena>
+            <Dortsala>5</Dortsala>
+            <Posizioa>Ezkerraldeko laterala</Posizioa>
+            <Jaiotze_data>1996-03-20</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000005E</NANa>
+            <Izen_abizena>Hodei Urretabizkaia</Izen_abizena>
+            <Dortsala>7</Dortsala>
+            <Posizioa>Ezkerraldeko hegala</Posizioa>
+            <Jaiotze_data>2004-09-10</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000006F</NANa>
+            <Izen_abizena>Aiur Egiguren Lasa</Izen_abizena>
+            <Dortsala>11</Dortsala>
+            <Posizioa>Eskuineko hegala</Posizioa>
+            <Jaiotze_data>2007-06-25</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000007G</NANa>
+            <Izen_abizena>Ganix Zulaika Berasategi</Izen_abizena>
+            <Dortsala>15</Dortsala>
+            <Posizioa>Eskuineko laterala</Posizioa>
+            <Jaiotze_data>1998-12-05</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000008H</NANa>
+            <Izen_abizena>Ibai Arrieta Uranga</Izen_abizena>
+            <Dortsala>13</Dortsala>
+            <Posizioa>Atezaina</Posizioa>
+            <Jaiotze_data>2001-08-14</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000009I</NANa>
+            <Izen_abizena>Eñaut Agirrebeitia</Izen_abizena>
+            <Dortsala>2</Dortsala>
+            <Posizioa>Zentrala</Posizioa>
+            <Jaiotze_data>2006-10-30</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000010J</NANa>
+            <Izen_abizena>Mattin Etxadi Izagirre</Izen_abizena>
+            <Dortsala>9</Dortsala>
+            <Posizioa>Pibotea</Posizioa>
+            <Jaiotze_data>2003-01-05</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000011K</NANa>
+            <Izen_abizena>Aritz Bergara Ormazabal</Izen_abizena>
+            <Dortsala>4</Dortsala>
+            <Posizioa>Ezkerraldeko hegala</Posizioa>
+            <Jaiotze_data>1999-07-12</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000012L</NANa>
+            <Izen_abizena>Jokin Aperribay</Izen_abizena>
+            <Dortsala>22</Dortsala>
+            <Posizioa>Eskuineko laterala</Posizioa>
+            <Jaiotze_data>1993-11-22</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000013M</NANa>
+            <Izen_abizena>Enekoitz Azkarate</Izen_abizena>
+            <Dortsala>12</Dortsala>
+            <Posizioa>Ezkerraldeko laterala</Posizioa>
+            <Jaiotze_data>2008-05-05</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>30000014N</NANa>
+            <Izen_abizena>Ugaitz Telleria Artola</Izen_abizena>
+            <Dortsala>6</Dortsala>
+            <Posizioa>Eskuineko hegala</Posizioa>
+            <Jaiotze_data>2004-02-14</Jaiotze_data>
+            <taldea>Irauli Bosteko</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000001A</NANa>
+            <Izen_abizena>Julen Ormaetxea Bilbao</Izen_abizena>
+            <Dortsala>1</Dortsala>
+            <Posizioa>Atezaina</Posizioa>
+            <Jaiotze_data>2005-06-12</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000002B</NANa>
+            <Izen_abizena>Iker Iturraspe Goiria</Izen_abizena>
+            <Dortsala>10</Dortsala>
+            <Posizioa>Pibotea</Posizioa>
+            <Jaiotze_data>2002-09-20</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000003C</NANa>
+            <Izen_abizena>Endika Basabe Arana</Izen_abizena>
+            <Dortsala>5</Dortsala>
+            <Posizioa>Zentrala</Posizioa>
+            <Jaiotze_data>1997-03-15</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000004D</NANa>
+            <Izen_abizena>Asier Urrutikoetxea</Izen_abizena>
+            <Dortsala>8</Dortsala>
+            <Posizioa>Ezkerraldeko laterala</Posizioa>
+            <Jaiotze_data>2003-11-10</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000005E</NANa>
+            <Izen_abizena>Jon Magunagoitia</Izen_abizena>
+            <Dortsala>13</Dortsala>
+            <Posizioa>Eskuineko hegala</Posizioa>
+            <Jaiotze_data>2006-01-25</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000006F</NANa>
+            <Izen_abizena>Gotzon Gorrotxategi</Izen_abizena>
+            <Dortsala>7</Dortsala>
+            <Posizioa>Ezkerraldeko hegala</Posizioa>
+            <Jaiotze_data>2000-06-30</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000007G</NANa>
+            <Izen_abizena>Ekhi Zabalondo Txertudi</Izen_abizena>
+            <Dortsala>16</Dortsala>
+            <Posizioa>Atezaina</Posizioa>
+            <Jaiotze_data>2008-09-05</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000008H</NANa>
+            <Izen_abizena>Peru Agirrezabala</Izen_abizena>
+            <Dortsala>9</Dortsala>
+            <Posizioa>Pibotea</Posizioa>
+            <Jaiotze_data>2004-02-14</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000009I</NANa>
+            <Izen_abizena>Kepa Amuriza Zarate</Izen_abizena>
+            <Dortsala>11</Dortsala>
+            <Posizioa>Eskuineko laterala</Posizioa>
+            <Jaiotze_data>1996-10-01</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000010J</NANa>
+            <Izen_abizena>Aitor Atutxa Goti</Izen_abizena>
+            <Dortsala>2</Dortsala>
+            <Posizioa>Zentrala</Posizioa>
+            <Jaiotze_data>2001-12-12</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000011K</NANa>
+            <Izen_abizena>Lander Barrenetxea</Izen_abizena>
+            <Dortsala>15</Dortsala>
+            <Posizioa>Ezkerraldeko laterala</Posizioa>
+            <Jaiotze_data>1998-04-22</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000012L</NANa>
+            <Izen_abizena>Bittor Egurrola</Izen_abizena>
+            <Dortsala>4</Dortsala>
+            <Posizioa>Ezkerraldeko hegala</Posizioa>
+            <Jaiotze_data>2005-07-18</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000013M</NANa>
+            <Izen_abizena>Erlantz Gabantxo</Izen_abizena>
+            <Dortsala>12</Dortsala>
+            <Posizioa>Eskuineko hegala</Posizioa>
+            <Jaiotze_data>2007-03-10</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>40000014N</NANa>
+            <Izen_abizena>Jagoba Gurtubay</Izen_abizena>
+            <Dortsala>18</Dortsala>
+            <Posizioa>Eskuineko laterala</Posizioa>
+            <Jaiotze_data>1999-05-25</Jaiotze_data>
+            <taldea>Berango Urduliz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000001A</NANa>
+            <Izen_abizena>Josian Barrenetxea Uriarte</Izen_abizena>
+            <Dortsala>1</Dortsala>
+            <Posizioa>Atezaina</Posizioa>
+            <Jaiotze_data>2000-05-11</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000002B</NANa>
+            <Izen_abizena>Beñat Arrasate Igartua</Izen_abizena>
+            <Dortsala>10</Dortsala>
+            <Posizioa>Pibotea</Posizioa>
+            <Jaiotze_data>2003-11-20</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000003C</NANa>
+            <Izen_abizena>Iker Casillas Vazquez</Izen_abizena>
+            <Dortsala>5</Dortsala>
+            <Posizioa>Zentrala</Posizioa>
+            <Jaiotze_data>2004-03-15</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000004D</NANa>
+            <Izen_abizena>Andoni Zumalde Guridi</Izen_abizena>
+            <Dortsala>8</Dortsala>
+            <Posizioa>Ezkerraldeko laterala</Posizioa>
+            <Jaiotze_data>2006-08-10</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000005E</NANa>
+            <Izen_abizena>Mikel Biain Biain</Izen_abizena>
+            <Dortsala>13</Dortsala>
+            <Posizioa>Eskuineko hegala</Posizioa>
+            <Jaiotze_data>1997-01-25</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000006F</NANa>
+            <Izen_abizena>Julen Murguzur</Izen_abizena>
+            <Dortsala>7</Dortsala>
+            <Posizioa>Ezkerraldeko hegala</Posizioa>
+            <Jaiotze_data>2007-06-30</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000007G</NANa>
+            <Izen_abizena>Xabier Markuleta</Izen_abizena>
+            <Dortsala>16</Dortsala>
+            <Posizioa>Atezaina</Posizioa>
+            <Jaiotze_data>1995-09-05</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000008H</NANa>
+            <Izen_abizena>Aitor Idigoras</Izen_abizena>
+            <Dortsala>9</Dortsala>
+            <Posizioa>Pibotea</Posizioa>
+            <Jaiotze_data>2002-02-14</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000009I</NANa>
+            <Izen_abizena>Jon Altuna Ibarluzea</Izen_abizena>
+            <Dortsala>11</Dortsala>
+            <Posizioa>Eskuineko laterala</Posizioa>
+            <Jaiotze_data>1999-10-01</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000010J</NANa>
+            <Izen_abizena>Gorka Umerez Arregi</Izen_abizena>
+            <Dortsala>2</Dortsala>
+            <Posizioa>Zentrala</Posizioa>
+            <Jaiotze_data>2005-12-12</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000011K</NANa>
+            <Izen_abizena>Eñaut Agirre Guridi</Izen_abizena>
+            <Dortsala>15</Dortsala>
+            <Posizioa>Ezkerraldeko laterala</Posizioa>
+            <Jaiotze_data>2001-04-22</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000012L</NANa>
+            <Izen_abizena>Manex Zubia Otaegi</Izen_abizena>
+            <Dortsala>4</Dortsala>
+            <Posizioa>Ezkerraldeko hegala</Posizioa>
+            <Jaiotze_data>2004-07-18</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000013M</NANa>
+            <Izen_abizena>Eneko Arriolabengoa</Izen_abizena>
+            <Dortsala>12</Dortsala>
+            <Posizioa>Eskuineko hegala</Posizioa>
+            <Jaiotze_data>2008-03-10</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>50000014N</NANa>
+            <Izen_abizena>Josu Arregi Mendi</Izen_abizena>
+            <Dortsala>18</Dortsala>
+            <Posizioa>Eskuineko laterala</Posizioa>
+            <Jaiotze_data>1994-05-25</Jaiotze_data>
+            <taldea>Aloña Mendi</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000001A</NANa>
+            <Izen_abizena>Xabier Azkue Olaizola</Izen_abizena>
+            <Dortsala>1</Dortsala>
+            <Posizioa>Atezaina</Posizioa>
+            <Jaiotze_data>2007-05-12</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000002B</NANa>
+            <Izen_abizena>Enaut Agirre Eizagirre</Izen_abizena>
+            <Dortsala>10</Dortsala>
+            <Posizioa>Pibotea</Posizioa>
+            <Jaiotze_data>2004-11-20</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000003C</NANa>
+            <Izen_abizena>Oihan Etxabe Ostolaza</Izen_abizena>
+            <Dortsala>5</Dortsala>
+            <Posizioa>Zentrala</Posizioa>
+            <Jaiotze_data>2002-03-15</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000004D</NANa>
+            <Izen_abizena>Markel Berasategi</Izen_abizena>
+            <Dortsala>8</Dortsala>
+            <Posizioa>Ezkerraldeko laterala</Posizioa>
+            <Jaiotze_data>2006-08-10</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000005E</NANa>
+            <Izen_abizena>Hodei Iruretagoiena</Izen_abizena>
+            <Dortsala>13</Dortsala>
+            <Posizioa>Eskuineko hegala</Posizioa>
+            <Jaiotze_data>2005-01-25</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000006F</NANa>
+            <Izen_abizena>Ibai Agirrezabalaga</Izen_abizena>
+            <Dortsala>7</Dortsala>
+            <Posizioa>Ezkerraldeko hegala</Posizioa>
+            <Jaiotze_data>1998-06-30</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000007G</NANa>
+            <Izen_abizena>Aitor Zubia Irigoien</Izen_abizena>
+            <Dortsala>16</Dortsala>
+            <Posizioa>Atezaina</Posizioa>
+            <Jaiotze_data>2001-09-05</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000008H</NANa>
+            <Izen_abizena>Julen Odriozola Arana</Izen_abizena>
+            <Dortsala>9</Dortsala>
+            <Posizioa>Pibotea</Posizioa>
+            <Jaiotze_data>2003-02-14</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000009I</NANa>
+            <Izen_abizena>Luken Illarramendi</Izen_abizena>
+            <Dortsala>11</Dortsala>
+            <Posizioa>Eskuineko laterala</Posizioa>
+            <Jaiotze_data>1996-10-01</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000010J</NANa>
+            <Izen_abizena>Haritz Elustondo</Izen_abizena>
+            <Dortsala>2</Dortsala>
+            <Posizioa>Zentrala</Posizioa>
+            <Jaiotze_data>2008-12-12</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000011K</NANa>
+            <Izen_abizena>Eneko Alkorta Olaiz</Izen_abizena>
+            <Dortsala>15</Dortsala>
+            <Posizioa>Ezkerraldeko laterala</Posizioa>
+            <Jaiotze_data>1999-04-22</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000012L</NANa>
+            <Izen_abizena>Jon Ander Agirre</Izen_abizena>
+            <Dortsala>4</Dortsala>
+            <Posizioa>Ezkerraldeko hegala</Posizioa>
+            <Jaiotze_data>2004-07-18</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000013M</NANa>
+            <Izen_abizena>Ander Esnal Larrañaga</Izen_abizena>
+            <Dortsala>12</Dortsala>
+            <Posizioa>Eskuineko hegala</Posizioa>
+            <Jaiotze_data>2000-03-10</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+        <Jokalaria>
+            <NANa>60000014N</NANa>
+            <Izen_abizena>Telmo Basterra Odriozola</Izen_abizena>
+            <Dortsala>18</Dortsala>
+            <Posizioa>Eskuineko laterala</Posizioa>
+            <Jaiotze_data>1995-05-25</Jaiotze_data>
+            <taldea>Amezti Zarautz</taldea>
+        </Jokalaria>
+    </Jokalariak>
+    <Entrenatzaileak>
+        <Entrenatzailea>
+            <NANa>70000001A</NANa>
+            <Izen_abizena>Gorka Etxeberria Lasa</Izen_abizena>
+            <Titulazioa>Goi-mailako Teknikaria</Titulazioa>
+            <taldea>San Adrian</taldea>
+        </Entrenatzailea>
+        <Entrenatzailea>
+            <NANa>70000002B</NANa>
+            <Izen_abizena>Mikel Ituarte Mendizabal</Izen_abizena>
+            <Titulazioa>Estatuko Entrenatzailea</Titulazioa>
+            <taldea>Kukullaga</taldea>
+        </Entrenatzailea>
+        <Entrenatzailea>
+            <NANa>70000003C</NANa>
+            <Izen_abizena>Amaia Agirreurreta Elorza</Izen_abizena>
+            <Titulazioa>Lurraldeko Entrenatzailea</Titulazioa>
+            <taldea>Irauli Bosteko</taldea>
+        </Entrenatzailea>
+        <Entrenatzailea>
+            <NANa>70000004D</NANa>
+            <Izen_abizena>Bittor Arana Goiri</Izen_abizena>
+            <Titulazioa>Goi-mailako Teknikaria</Titulazioa>
+            <taldea>Berango Urduliz</taldea>
+        </Entrenatzailea>
+        <Entrenatzailea>
+            <NANa>70000005E</NANa>
+            <Izen_abizena>Iñaki Ugarteburu Artola</Izen_abizena>
+            <Titulazioa>Estatuko Entrenatzailea</Titulazioa>
+            <taldea>Aloña Mendi</taldea>
+        </Entrenatzailea>
+        <Entrenatzailea>
+            <NANa>70000006F</NANa>
+            <Izen_abizena>Maite Azkue Olaizola</Izen_abizena>
+            <Titulazioa>Lurraldeko Entrenatzailea</Titulazioa>
+            <taldea>Amezti Zarautz</taldea>
+        </Entrenatzailea>
+    </Entrenatzaileak>
+    <Epaileak>
+        <Epailea>
+            <NANa>80000001A</NANa>
+            <Izen_abizena>Jon Urkidi Artetxe</Izen_abizena>
+            <Maila>Nazionala</Maila>
+        </Epailea>
+        <Epailea>
+            <NANa>80000002B</NANa>
+            <Izen_abizena>Ane Mendizabal Goti</Izen_abizena>
+            <Maila>Nazionala</Maila>
+        </Epailea>
+        <Epailea>
+            <NANa>80000003C</NANa>
+            <Izen_abizena>Kepa Arrate Zubia</Izen_abizena>
+            <Maila>Lurraldekoa</Maila>
+        </Epailea>
+        <Epailea>
+            <NANa>80000004D</NANa>
+            <Izen_abizena>Maider Elorriaga Laka</Izen_abizena>
+            <Maila>Lurraldekoa</Maila>
+        </Epailea>
+        <Epailea>
+            <NANa>80000005E</NANa>
+            <Izen_abizena>Unai Goikoetxea Lasa</Izen_abizena>
+            <Maila>Lehen mailakoa</Maila>
+        </Epailea>
+        <Epailea>
+            <NANa>80000006F</NANa>
+            <Izen_abizena>Itziar Agirre Beloki</Izen_abizena>
+            <Maila>Lehen mailakoa</Maila>
+        </Epailea>
+    </Epaileak>
+    <Partiduak>
+        <Partidua>
+            <id_auto>1</id_auto>
+            <kod_partidua>J 1 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-05</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>28</Golak_lokala>
+            <Golak_kanpokoak>24</Golak_kanpokoak>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>2</id_auto>
+            <kod_partidua>J 1 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-05</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>21</Golak_lokala>
+            <Golak_kanpokoak>21</Golak_kanpokoak>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>3</id_auto>
+            <kod_partidua>J 1 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-05</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>25</Golak_lokala>
+            <Golak_kanpokoak>29</Golak_kanpokoak>
+            <Zelaia>Colegio Escolapios</Zelaia>
+            <Talde_lokala>Escolapios</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>4</id_auto>
+            <kod_partidua>J 2 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-12</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>31</Golak_lokala>
+            <Golak_kanpokoak>27</Golak_kanpokoak>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Escolapios</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>5</id_auto>
+            <kod_partidua>J 2 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-12</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>24</Golak_lokala>
+            <Golak_kanpokoak>24</Golak_kanpokoak>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>6</id_auto>
+            <kod_partidua>J 2 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-12</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>22</Golak_lokala>
+            <Golak_kanpokoak>30</Golak_kanpokoak>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>7</id_auto>
+            <kod_partidua>J 3 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-19</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>29</Golak_lokala>
+            <Golak_kanpokoak>26</Golak_kanpokoak>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>8</id_auto>
+            <kod_partidua>J 3 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-19</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>23</Golak_lokala>
+            <Golak_kanpokoak>31</Golak_kanpokoak>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>9</id_auto>
+            <kod_partidua>J 3 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-19</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>20</Golak_lokala>
+            <Golak_kanpokoak>22</Golak_kanpokoak>
+            <Zelaia>Colegio Escolapios</Zelaia>
+            <Talde_lokala>Escolapios</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>10</id_auto>
+            <kod_partidua>J 4 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-26</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>27</Golak_lokala>
+            <Golak_kanpokoak>27</Golak_kanpokoak>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>11</id_auto>
+            <kod_partidua>J 4 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-26</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>28</Golak_lokala>
+            <Golak_kanpokoak>25</Golak_kanpokoak>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>12</id_auto>
+            <kod_partidua>J 4 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-10-26</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>21</Golak_lokala>
+            <Golak_kanpokoak>23</Golak_kanpokoak>
+            <Zelaia>Colegio Escolapios</Zelaia>
+            <Talde_lokala>Escolapios</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>13</id_auto>
+            <kod_partidua>J 5 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-02</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>24</Golak_lokala>
+            <Golak_kanpokoak>26</Golak_kanpokoak>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>14</id_auto>
+            <kod_partidua>J 5 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-02</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>19</Golak_lokala>
+            <Golak_kanpokoak>30</Golak_kanpokoak>
+            <Zelaia>Colegio Escolapios</Zelaia>
+            <Talde_lokala>Escolapios</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>15</id_auto>
+            <kod_partidua>J 5 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-02</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>32</Golak_lokala>
+            <Golak_kanpokoak>28</Golak_kanpokoak>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>16</id_auto>
+            <kod_partidua>J 6 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-09</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>25</Golak_lokala>
+            <Golak_kanpokoak>25</Golak_kanpokoak>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>17</id_auto>
+            <kod_partidua>J 6 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-09</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>28</Golak_lokala>
+            <Golak_kanpokoak>22</Golak_kanpokoak>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>18</id_auto>
+            <kod_partidua>J 6 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-09</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>31</Golak_lokala>
+            <Golak_kanpokoak>26</Golak_kanpokoak>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Escolapios</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>19</id_auto>
+            <kod_partidua>J 7 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-16</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>24</Golak_lokala>
+            <Golak_kanpokoak>28</Golak_kanpokoak>
+            <Zelaia>Colegio Escolapios</Zelaia>
+            <Talde_lokala>Escolapios</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>20</id_auto>
+            <kod_partidua>J 7 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-16</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>27</Golak_lokala>
+            <Golak_kanpokoak>23</Golak_kanpokoak>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>21</id_auto>
+            <kod_partidua>J 7 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-16</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>25</Golak_lokala>
+            <Golak_kanpokoak>24</Golak_kanpokoak>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>22</id_auto>
+            <kod_partidua>J 8 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-23</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>29</Golak_lokala>
+            <Golak_kanpokoak>28</Golak_kanpokoak>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>23</id_auto>
+            <kod_partidua>J 8 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-23</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>30</Golak_lokala>
+            <Golak_kanpokoak>26</Golak_kanpokoak>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>24</id_auto>
+            <kod_partidua>J 8 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-23</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>26</Golak_lokala>
+            <Golak_kanpokoak>25</Golak_kanpokoak>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>Escolapios</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>25</id_auto>
+            <kod_partidua>J 9 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-30</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>22</Golak_lokala>
+            <Golak_kanpokoak>24</Golak_kanpokoak>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>26</id_auto>
+            <kod_partidua>J 9 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-30</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>27</Golak_lokala>
+            <Golak_kanpokoak>27</Golak_kanpokoak>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>27</id_auto>
+            <kod_partidua>J 9 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-11-30</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>31</Golak_lokala>
+            <Golak_kanpokoak>24</Golak_kanpokoak>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Escolapios</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>28</id_auto>
+            <kod_partidua>J 10 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-12-07</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala>28</Golak_lokala>
+            <Golak_kanpokoak>25</Golak_kanpokoak>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>29</id_auto>
+            <kod_partidua>J 10 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-12-07</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala>23</Golak_lokala>
+            <Golak_kanpokoak>22</Golak_kanpokoak>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Escolapios</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>30</id_auto>
+            <kod_partidua>J 10 - 24-25</kod_partidua>
+            <denboraldia>24-25</denboraldia>
+            <Data>2024-12-07</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala>31</Golak_lokala>
+            <Golak_kanpokoak>29</Golak_kanpokoak>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>31</id_auto>
+            <kod_partidua>J 1 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-04</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>32</id_auto>
+            <kod_partidua>J 1 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-04</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>33</id_auto>
+            <kod_partidua>J 1 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-04</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Benta Berri</Zelaia>
+            <Talde_lokala>Irauli Bosteko</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>34</id_auto>
+            <kod_partidua>J 2 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-11</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Irauli Bosteko</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>35</id_auto>
+            <kod_partidua>J 2 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-11</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>36</id_auto>
+            <kod_partidua>J 2 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-11</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>37</id_auto>
+            <kod_partidua>J 3 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-18</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>38</id_auto>
+            <kod_partidua>J 3 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-18</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>39</id_auto>
+            <kod_partidua>J 3 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-18</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Benta Berri</Zelaia>
+            <Talde_lokala>Irauli Bosteko</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>40</id_auto>
+            <kod_partidua>J 4 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-25</Data>
+            <Ordua>16:30:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1>Jon Urkidi</epailea1>
+            <epailea2>Ane Mendizabal</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>41</id_auto>
+            <kod_partidua>J 4 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-25</Data>
+            <Ordua>18:15:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1>Kepa Arrate</epailea1>
+            <epailea2>Maider Elorriaga</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>42</id_auto>
+            <kod_partidua>J 4 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-10-25</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Benta Berri</Zelaia>
+            <Talde_lokala>Irauli Bosteko</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1>Unai Goikoetxea</epailea1>
+            <epailea2>Itziar Agirre</epailea2>
+        </Partidua>
+        <Partidua>
+            <id_auto>43</id_auto>
+            <kod_partidua>J 5 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-01</Data>
+            <Ordua>20:00:00</Ordua>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>44</id_auto>
+            <kod_partidua>J 5 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-01</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Benta Berri</Zelaia>
+            <Talde_lokala>Irauli Bosteko</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>45</id_auto>
+            <kod_partidua>J 5 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-01</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>46</id_auto>
+            <kod_partidua>J 6 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-08</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>47</id_auto>
+            <kod_partidua>J 6 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-08</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>48</id_auto>
+            <kod_partidua>J 6 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-08</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Irauli Bosteko</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>49</id_auto>
+            <kod_partidua>J 7 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-15</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Benta Berri</Zelaia>
+            <Talde_lokala>Irauli Bosteko</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>50</id_auto>
+            <kod_partidua>J 7 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-15</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>51</id_auto>
+            <kod_partidua>J 7 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-15</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>52</id_auto>
+            <kod_partidua>J 8 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-22</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>San Adrian</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>53</id_auto>
+            <kod_partidua>J 8 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-22</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>54</id_auto>
+            <kod_partidua>J 8 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-22</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>Irauli Bosteko</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>55</id_auto>
+            <kod_partidua>J 9 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-29</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Zubikoa Kiroldegia</Zelaia>
+            <Talde_lokala>Aloña Mendi</Talde_lokala>
+            <Kampoko_taldea>Amezti Zarautz</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>56</id_auto>
+            <kod_partidua>J 9 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-29</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Berango Urduliz</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>57</id_auto>
+            <kod_partidua>J 9 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-11-29</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Municipal Etxebarri</Zelaia>
+            <Talde_lokala>Kukullaga</Talde_lokala>
+            <Kampoko_taldea>Irauli Bosteko</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>58</id_auto>
+            <kod_partidua>J 10 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-12-06</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Berango</Zelaia>
+            <Talde_lokala>Berango Urduliz</Talde_lokala>
+            <Kampoko_taldea>Kukullaga</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>59</id_auto>
+            <kod_partidua>J 10 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-12-06</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Aritzbatalde Kiroldegia</Zelaia>
+            <Talde_lokala>Amezti Zarautz</Talde_lokala>
+            <Kampoko_taldea>Irauli Bosteko</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+        <Partidua>
+            <id_auto>60</id_auto>
+            <kod_partidua>J 10 - 25-26</kod_partidua>
+            <denboraldia>25-26</denboraldia>
+            <Data>2025-12-06</Data>
+            <Ordua/>
+            <Golak_lokala/>
+            <Golak_kanpokoak/>
+            <Zelaia>Polideportivo Rekalde</Zelaia>
+            <Talde_lokala>San Adrian</Talde_lokala>
+            <Kampoko_taldea>Aloña Mendi</Kampoko_taldea>
+            <epailea1/>
+            <epailea2/>
+        </Partidua>
+    </Partiduak>
+</EskubaloiDatuak>

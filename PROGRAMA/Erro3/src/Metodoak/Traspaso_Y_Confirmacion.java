@@ -63,7 +63,7 @@ public class Traspaso_Y_Confirmacion {
      * @return Traspasoen interfaze osoa jasotzen duen {@link JPanel} objektua.
      */
     public static JPanel crearPanelTraspaso() {
-    	PanelConFondo panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new GridLayout(6, 2, 10, 10));
+    	PanelConFondo panel = new PanelConFondo("Imagenes16K/TEXTURES/Fondo.jpg", new GridLayout(6, 2, 10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
         JComboBox<String> cbEquipoOrigen = new JComboBox<>(ZERRENDA_TALDEAK);

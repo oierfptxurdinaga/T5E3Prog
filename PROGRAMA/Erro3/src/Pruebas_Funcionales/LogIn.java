@@ -31,14 +31,14 @@ public class LogIn extends JFrame {
 	public LogIn() {
 
 		setTitle("Login de Usuario");
-		setIconImage(new ImageIcon("Imagenes16K/LOGON.png").getImage());
+		setIconImage(new ImageIcon("Imagenes16K/EMPRESA-LOGOAK/LOGON.png").getImage());
 		setSize(350, 220);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setResizable(false);
 		getContentPane().setLayout(null);
 		
-		ImageIcon Fondo = new ImageIcon("Imagenes16K/Fondo.jpg");
+		ImageIcon Fondo = new ImageIcon("Imagenes16K/TEXTURES/Fondo.jpg");
 	    Image Fondo2 = Fondo.getImage().getScaledInstance(350, 220, Image.SCALE_SMOOTH);
 	    
 	    JLabel fondoPrincipal = new JLabel(new ImageIcon(Fondo2));
@@ -63,7 +63,7 @@ public class LogIn extends JFrame {
 		txtPassword.setBounds(120, 70, 180, 20);
 		getContentPane().add(txtPassword);
 		
-		ImageIcon texturaBotonOriginal = new ImageIcon("Imagenes16K/MarmolTexture.jpg");
+		ImageIcon texturaBotonOriginal = new ImageIcon("Imagenes16K/TEXTURES/MarmolTexture.jpg");
 		Image texturaBoton = texturaBotonOriginal.getImage().getScaledInstance(120, 30, Image.SCALE_SMOOTH);
 
 		Color lightGoldenrod = new Color(238, 221, 130); // El color personalizado que queremos
@@ -101,7 +101,7 @@ public class LogIn extends JFrame {
 
 		getContentPane().add(lblImagen);
 
-		ImageIcon iconoOriginal2 = new ImageIcon("Imagenes16K/NexoDev4K.png");
+		ImageIcon iconoOriginal2 = new ImageIcon("Imagenes16K/EMPRESA-LOGOAK/NexoDev4K.png");
 		Image imagenEscalada2 = iconoOriginal2.getImage().getScaledInstance(96, 64, Image.SCALE_SMOOTH); //SCALE_SMOOTH para mejor calidad | SCALE_FAST para rendimiento
 		ImageIcon icono2 = new ImageIcon(imagenEscalada2);
 

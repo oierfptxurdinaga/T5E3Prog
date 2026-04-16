@@ -27,7 +27,7 @@ public class VentanaUsuarios extends JFrame {
 
     public VentanaUsuarios() {
         setTitle("Ventana de Usuario");
-        setIconImage(new ImageIcon("Imagenes16K/LOGON.png").getImage());
+        setIconImage(new ImageIcon("Imagenes16K/EMPRESA-LOGOAK/LOGON.png").getImage());
         setSize(800, 500);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -52,7 +52,7 @@ public class VentanaUsuarios extends JFrame {
     // =======================
     private JPanel crearPanelInicio() {
         //JPanel panel = new JPanel(null);
-        JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", null);
+        JPanel panel = new PanelConFondo("Imagenes16K/TEXTURES/Fondo.jpg", null);
 
         lblBienvenida = new JLabel("¡Bienvenido!", SwingConstants.CENTER);
         lblBienvenida.setForeground(new Color(0, 0, 0));
@@ -68,7 +68,7 @@ public class VentanaUsuarios extends JFrame {
     // =======================
     private JPanel crearPanelPerfil() {
         //JPanel panel = new JPanel(null);
-    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", null);
+    	JPanel panel = new PanelConFondo("Imagenes16K/TEXTURES/Fondo.jpg", null);
 
         JLabel lblInfo = new JLabel("Profilaren informazioa");
         lblInfo.setFont(new Font("Tahoma", Font.BOLD, 16));
@@ -120,7 +120,7 @@ public class VentanaUsuarios extends JFrame {
     // ==========================================
     private JPanel crearPanelDeLosJugadores() {
         //JPanel panel = new JPanel(new BorderLayout(10, 10));
-    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new BorderLayout(10, 10));
+    	JPanel panel = new PanelConFondo("Imagenes16K/TEXTURES/Fondo.jpg", new BorderLayout(10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
 
         JPanel panelTop = new JPanel(new FlowLayout(FlowLayout.LEFT));
@@ -190,7 +190,7 @@ public class VentanaUsuarios extends JFrame {
     // PESTAÑA ENTRENADORES (CONECTADA A MYSQL CON DAO)
     // ==========================================
     private JPanel crearPanelDeLosEntrenadores() {
-    	JPanel panel = new PanelConFondo("Imagenes16K/Fondo.jpg", new BorderLayout(10, 10));
+    	JPanel panel = new PanelConFondo("Imagenes16K/TEXTURES/Fondo.jpg", new BorderLayout(10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
 
         JPanel panelTop = new JPanel(new FlowLayout(FlowLayout.LEFT));
