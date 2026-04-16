@@ -44,7 +44,7 @@ public class VentanaArbitro extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
-        getContentPane().setLayout(null);
+        //getContentPane().setLayout(null);
 
         // Inicializar relación equipo -> campo (Basado en tu base de datos)
         camposPorEquipo = new HashMap<>();
