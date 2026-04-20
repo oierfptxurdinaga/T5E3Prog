@@ -9,11 +9,21 @@ import java.util.List;
 import Metodoak.Konexioa;
 import POJOAK3.Entrenatzailea;
 
+/**
+ * Entrenatzaileekin erlazionatutako datu-base eragiketak kudeatzen dituen DAO klasea.
+ * <p>
+ * Klase honek entrenatzaileen informazioa taldearen arabera lortzeko eta
+ * txertatzeko funtzionalitateak eskaintzen ditu.
+ * </p>
+ */
 public class EntrenatzaileaDAO {
 
-    // ===============================
-    // LORTU ENTRENATZAILEAK TALDEAREN ARABERA
-    // ===============================
+    /**
+     * Talde jakin bateko entrenatzaile guztien zerrenda lortzen du.
+     *
+     * @param taldea Entrenatzaileak bilatzeko taldearen izena
+     * @return Talde horretako {@link Entrenatzailea} objektuen zerrenda
+     */
     public List<Entrenatzailea> getEntrenatzaileakByTaldea(String taldea) {
         List<Entrenatzailea> lista = new ArrayList<>();
         String sql = """
@@ -42,9 +52,12 @@ public class EntrenatzaileaDAO {
         return lista;
     }
 
-    // ===============================
-    // TXERTATU ENTRENATZAILEA
-    // ===============================
+    /**
+     * Entrenatzaile berri bat datu-basean txertatzen du.
+     *
+     * @param e Txertatu nahi den {@link Entrenatzailea} objektua
+     * @return {@code true} txertaketa arrakastatsua bada, bestela {@code false}
+     */
     public boolean insertarEntrenatzailea(Entrenatzailea e) {
         String sql = """
                 INSERT INTO entrenatzailea (NANa, Izen_abizena, Titulazioa, taldea)
@@ -61,6 +74,7 @@ public class EntrenatzaileaDAO {
 
             pstmt.executeUpdate();
             return true;
+
         } catch (Exception ex) {
             ex.printStackTrace();
             return false;

@@ -9,11 +9,21 @@ import java.util.List;
 import Metodoak.Konexioa;
 import POJOAK3.Pertsona;
 
+/**
+ * Pertsonen datu-base eragiketak kudeatzen dituen DAO klasea.
+ * <p>
+ * Klase honek pertsonen informazioa taldearen edo rolaren arabera bilatzeko,
+ * txertatzeko eta ezabatzeko funtzionalitateak eskaintzen ditu.
+ * </p>
+ */
 public class PertsonaDAO {
 
-    // ===============================
-    // LORTU PERTSONAK TALDEAREN ARABERA
-    // ===============================
+    /**
+     * Talde jakin bateko pertsona guztien zerrenda lortzen du.
+     *
+     * @param taldea Pertsonak bilatzeko taldearen izena
+     * @return Talde horretako {@link Pertsona} objektuen zerrenda
+     */
     public List<Pertsona> getPertsonakByTaldea(String taldea) {
         List<Pertsona> lista = new ArrayList<>();
         String sql = """
@@ -32,7 +42,7 @@ public class PertsonaDAO {
                 Pertsona p = new Pertsona();
                 p.setNana(rs.getString("NANa"));
                 p.setIzenAbizena(rs.getString("Izen_abizena"));
-                // getObject es útil por si el Adina es NULL en la BD
+                // Adina balio nulua izan daiteke, horregatik getObject erabiltzen da
                 p.setAdina((Integer) rs.getObject("Adina"));
                 p.setHelbidea(rs.getString("Helbidea"));
                 p.setTlfn(rs.getString("Tlfn"));
@@ -46,9 +56,12 @@ public class PertsonaDAO {
         return lista;
     }
 
-    // ===============================
-    // LORTU PERTSONAK ROLAREN ARABERA
-    // ===============================
+    /**
+     * Rol jakin bateko pertsona guztien zerrenda lortzen du.
+     *
+     * @param rola Pertsonen rola (adibidez: jokalaria, entrenatzailea...)
+     * @return Rol horretako {@link Pertsona} objektuen zerrenda
+     */
     public List<Pertsona> getPertsonakByRola(String rola) {
         List<Pertsona> lista = new ArrayList<>();
         String sql = "SELECT * FROM pertsona WHERE Rola = ?";
@@ -76,9 +89,12 @@ public class PertsonaDAO {
         return lista;
     }
 
-    // ===============================
-    // TXERTATU PERTSONA
-    // ===============================
+    /**
+     * Pertsona berri bat datu-basean txertatzen du.
+     *
+     * @param p Txertatu nahi den {@link Pertsona} objektua
+     * @return {@code true} txertaketa arrakastatsua bada, bestela {@code false}
+     */
     public boolean insertarPertsona(Pertsona p) {
         String sql = """
                 INSERT INTO pertsona 
@@ -91,7 +107,7 @@ public class PertsonaDAO {
 
             pstmt.setString(1, p.getNana());
             pstmt.setString(2, p.getIzenAbizena());
-            pstmt.setObject(3, p.getAdina()); // setObject maneja valores Integer nulos
+            pstmt.setObject(3, p.getAdina()); // balio nulua onartzen du
             pstmt.setString(4, p.getHelbidea());
             pstmt.setString(5, p.getTlfn());
             pstmt.setString(6, p.getTaldea());
@@ -106,9 +122,12 @@ public class PertsonaDAO {
         }
     }
 
-    // ===============================
-    // EZABATU PERTSONA
-    // ===============================
+    /**
+     * NANaren bidez pertsona bat datu-basetik ezabatzen du.
+     *
+     * @param nana Ezabatu nahi den pertsonaren NANa
+     * @return {@code true} pertsona ezabatu bada, bestela {@code false}
+     */
     public boolean eliminarPertsona(String nana) {
         String sql = "DELETE FROM pertsona WHERE NANa = ?";
 

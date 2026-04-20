@@ -9,12 +9,19 @@ import java.util.List;
 import Metodoak.Konexioa;
 import POJOAK3.Partidua;
 
+/**
+ * Partiduekin erlazionatutako datu-base eragiketak kudeatzen dituen DAO klasea.
+ * <p>
+ * Klase honek partiduen informazioa lortzeko eta txertatzeko funtzionalitateak eskaintzen ditu.
+ * </p>
+ */
 public class PartiduaDAO {
-	
-    // ===============================
-    // LORTU PARTIDUAK GUZTIAK
-    // ===============================
 
+    /**
+     * Datu-baseko partida guztien zerrenda lortzen du.
+     *
+     * @return Partidu guztien {@link List} bat, edo zerrenda huts bat errorea gertatuz gero
+     */
     public List<Partidua> getPartiduakGuztiak() {
         List<Partidua> lista = new ArrayList<>();
         String sql = """
@@ -50,10 +57,12 @@ public class PartiduaDAO {
         return lista;
     }
 
-    // ===============================
-    // TXERTATU PARTIDUA
-    // ===============================
-    
+    /**
+     * Partida berri bat datu-basean txertatzen du.
+     *
+     * @param p Txertatu nahi den {@link Partidua} objektua
+     * @return {@code true} txertaketa arrakastatsua bada, bestela {@code false}
+     */
     public boolean insertarPartidua(Partidua p) {
         String sql = """
                 INSERT INTO partidua 
@@ -79,6 +88,7 @@ public class PartiduaDAO {
 
             pstmt.executeUpdate();
             return true;
+
         } catch (Exception ex) {
             ex.printStackTrace();
             return false;

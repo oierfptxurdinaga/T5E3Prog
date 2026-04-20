@@ -9,11 +9,20 @@ import java.util.List;
 import Metodoak.Konexioa;
 import POJOAK3.Jokalaria;
 
+/**
+ * Jokalariekin erlazionatutako datu-base eragiketak kudeatzen dituen DAO klasea.
+ * <p>
+ * Klase honek jokalariak lortzeko, txertatzeko eta ezabatzeko funtzionalitateak eskaintzen ditu.
+ * </p>
+ */
 public class JokalariaDAO {
 
-    // ===============================
-    // LORTU JOKALARIAK TALDEAREN ARABERA
-    // ===============================
+    /**
+     * Talde jakin bateko jokalari guztien zerrenda lortzen du.
+     *
+     * @param taldea Jokalariak bilatzeko taldearen izena
+     * @return Talde horretako {@link Jokalaria} objektuen zerrenda
+     */
     public List<Jokalaria> getJokalariakByTaldea(String taldea) {
 
         List<Jokalaria> lista = new ArrayList<>();
@@ -53,9 +62,12 @@ public class JokalariaDAO {
         return lista;
     }
 
-    // ===============================
-    // TXERTATU JOKALARIA
-    // ===============================
+    /**
+     * Jokalari berri bat datu-basean txertatzen du.
+     *
+     * @param j Txertatu nahi den {@link Jokalaria} objektua
+     * @return {@code true} txertaketa arrakastatsua bada, bestela {@code false}
+     */
     public boolean insertarJokalaria(Jokalaria j) {
 
         String sql = """
@@ -83,9 +95,12 @@ public class JokalariaDAO {
         }
     }
 
-    // ===============================
-    // EZABATU JOKALARIA
-    // ===============================
+    /**
+     * NANaren bidez jokalari bat datu-basetik ezabatzen du.
+     *
+     * @param nana Ezabatu nahi den jokalariaren NANa
+     * @return {@code true} jokalaria ezabatu bada, bestela {@code false}
+     */
     public boolean eliminarJokalaria(String nana) {
 
         String sql = "DELETE FROM jokalaria WHERE NANa = ?";
@@ -103,5 +118,4 @@ public class JokalariaDAO {
             return false;
         }
     }
-
 }

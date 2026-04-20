@@ -9,11 +9,20 @@ import java.util.List;
 import Metodoak.Konexioa;
 import POJOAK3.Epailea;
 
+/**
+ * Epaileekin erlazionatutako datu-base eragiketak kudeatzen dituen DAO klasea.
+ * <p>
+ * Klase honek epaileen informazioa lortzeko, txertatzeko eta ezabatzeko
+ * funtzioak eskaintzen ditu.
+ * </p>
+ */
 public class EpaileaDAO {
 
-    // ===============================
-    // LORTU EPAILE GUZTIAK
-    // ===============================
+    /**
+     * Datu-baseko epaile guztien zerrenda lortzen du.
+     *
+     * @return Epaileen {@link List} bat, edo zerrenda huts bat errorea gertatuz gero
+     */
     public List<Epailea> getEpaileakGuztiak() {
         List<Epailea> lista = new ArrayList<>();
         String sql = "SELECT NANa, Izen_abizena, Maila FROM epailea";
@@ -35,9 +44,12 @@ public class EpaileaDAO {
         return lista;
     }
 
-    // ===============================
-    // TXERTATU EPAILEA
-    // ===============================
+    /**
+     * Epaile berri bat datu-basean txertatzen du.
+     *
+     * @param e Txertatu nahi den {@link Epailea} objektua
+     * @return {@code true} txertaketa arrakastatsua bada, bestela {@code false}
+     */
     public boolean insertarEpailea(Epailea e) {
         String sql = """
                 INSERT INTO epailea (NANa, Izen_abizena, Maila)
@@ -59,9 +71,12 @@ public class EpaileaDAO {
         }
     }
 
-    // ===============================
-    // EZABATU EPAILEA
-    // ===============================
+    /**
+     * NANaren bidez epaile bat datu-basetik ezabatzen du.
+     *
+     * @param nana Ezabatu nahi den epailearen NANa
+     * @return {@code true} epailea ezabatu bada, bestela {@code false}
+     */
     public boolean eliminarEpailea(String nana) {
         String sql = "DELETE FROM epailea WHERE NANa = ?";
 
