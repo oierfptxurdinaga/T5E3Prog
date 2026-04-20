@@ -1,0 +1,52 @@
+JLabel lblImagen = new JLabel("Loading █▓▒░");
+		lblImagen.setFont(new Font("Arial", Font.PLAIN, 10));
+		lblImagen.setBounds(10, 100, 80, 80);
+		getContentPane().add(lblImagen);
+
+		JLabel lblImagen2 = new JLabel("  Loading █▓▒░");
+		lblImagen2.setFont(new Font("Arial", Font.PLAIN, 10));
+		lblImagen2.setBounds(225, 100, 96, 64);
+		getContentPane().add(lblImagen2);
+
+		SwingWorker<Void, Void> workerImagenes = new SwingWorker<Void, Void>() {
+		    
+		    // Variables para guardar el resultado final
+		    private ImageIcon iconoFinal1;
+		    private ImageIcon iconoFinal2;
+
+		    @Override
+		    protected Void doInBackground() throws Exception {
+		        // El hilo principal está libre y tu ventana ya es visible y usable.
+		        
+		        ImageIcon iconoOriginal = new ImageIcon("Imagenes16K/EEF16K.png");
+		        Image imagenEscalada = iconoOriginal.getImage().getScaledInstance(80, 80, Image.SCALE_SMOOTH);
+		        iconoFinal1 = new ImageIcon(imagenEscalada);
+
+		        ImageIcon iconoOriginal2 = new ImageIcon("Imagenes16K/NexoDev4K.png");
+		        Image imagenEscalada2 = iconoOriginal2.getImage().getScaledInstance(96, 64, Image.SCALE_SMOOTH);
+		        iconoFinal2 = new ImageIcon(imagenEscalada2);
+
+		        return null;
+		    }
+
+		    @Override
+		    protected void done() {
+		        // Aquí es seguro actualizar la interfaz gráfica.
+		        try {
+		            lblImagen.setText(""); // Borramos el texto "Kargatzen..."
+		            lblImagen.setIcon(iconoFinal1); // Ponemos la imagen 1
+
+		            lblImagen2.setText(""); // Borramos el texto "Kargatzen..."
+		            lblImagen2.setIcon(iconoFinal2); // Ponemos la imagen 2
+		            
+		            // Refrescamos la interfaz visualmente por si acaso
+		            getContentPane().repaint();
+		            
+		        } catch (Exception ex) {
+		            System.err.println("Error al aplicar las imágenes: " + ex.getMessage());
+		        }
+		    }
+		};
+
+		// 3. ¡Muy importante! Le decimos al trabajador que empiece a ejecutar su tarea
+		workerImagenes.execute();

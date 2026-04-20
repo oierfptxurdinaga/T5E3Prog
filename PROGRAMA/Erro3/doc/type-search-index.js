@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"POJOAK3","l":"Entrenatzailea"},{"p":"POJOAK3","l":"Epailea"},{"p":"POJOAK3","l":"Jokalaria"},{"p":"POJOAK3","l":"Partidua"},{"p":"POJOAK3","l":"Pertsona"}];updateSearchResults();
